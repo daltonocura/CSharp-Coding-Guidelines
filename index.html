@@ -6,8 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <link href='https://fonts.googleapis.com/css?family=Architects+Daughter' rel='stylesheet' type='text/css'>
       
-      <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/default.min.css">
-<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js"></script>
       
     <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
     <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen">
@@ -87,14 +85,14 @@
 
 <ul>
 <li>
-<img src="imgs/must.png" alt="MUST">: This guideline must be considered for coding.</li>
+<img src="images/must.png" alt="MUST">: This guideline must be considered for coding.</li>
 <li>
-<img src="imgs/should.png" alt="SHOULD">: This guideline is strongly recommended for coding.</li>
+<img src="images/should.png" alt="SHOULD">: This guideline is strongly recommended for coding.</li>
 <li>
-<img src="imgs/may.png" alt="MAY">: This guideline can be applied for coding.</li>
+<img src="images/may.png" alt="MAY">: This guideline can be applied for coding.</li>
 </ul>
 
-<p><img src="imgs/note.png" alt="NOTE"> The terms – <code>must</code>, <code>should</code> and <code>may</code> – are defined in <a href="http://www.ietf.org/rfc/rfc2119.txt">RFC 2119</a></p>
+<p><img src="images/note.png" alt="NOTE"> The terms – <code>must</code>, <code>should</code> and <code>may</code> – are defined in <a href="http://www.ietf.org/rfc/rfc2119.txt">RFC 2119</a></p>
 
 <h1>
 <a id="useful-resources" class="anchor" href="#useful-resources" aria-hidden="true"><span class="octicon octicon-link"></span></a>Useful Resources</h1>
@@ -179,7 +177,7 @@ DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVI
 <a id="class-design-guidelines" class="anchor" href="#class-design-guidelines" aria-hidden="true"><span class="octicon octicon-link"></span></a>Class Design Guidelines</h1>
 
 <h2>
-<a id="a-class-or-interface-should-have-a-single-purpose-" class="anchor" href="#a-class-or-interface-should-have-a-single-purpose-" aria-hidden="true"><span class="octicon octicon-link"></span></a>A class or interface should have a single purpose <img src="imgs/must.png" alt="">
+<a id="a-class-or-interface-should-have-a-single-purpose-" class="anchor" href="#a-class-or-interface-should-have-a-single-purpose-" aria-hidden="true"><span class="octicon octicon-link"></span></a>A class or interface should have a single purpose <img src="images/must.png" alt="">
 </h2>
 
 <p>A class or interface should have a single purpose within the system it participates in. In general, a class is either representing a primitive type like an email or ISBN number, an abstraction of some business concept, a plain data structure or responsible for orchestrating the interaction between other classes. It is never a combination of those. This rule is widely known as the <a href="http://www.objectmentor.com/resources/articles/srp.pdf">Single Responsibility Principle (SRP)</a>, one of the <a href="http://programmers.stackexchange.com/questions/202571/solid-principles-and-code-structure">SOLID principles</a>.</p>
@@ -187,19 +185,19 @@ DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVI
 <p>Using <a href="http://en.wikipedia.org/wiki/Design_pattern_(computer_science)">Design Patterns</a> is to communicate the intent of a class. If a single design pattern is assigned to a class, the class is more likely doing more than one thing.</p>
 
 <h2>
-<a id="an-interface-should-be-small-and-focused-" class="anchor" href="#an-interface-should-be-small-and-focused-" aria-hidden="true"><span class="octicon octicon-link"></span></a>An interface should be small and focused <img src="imgs/should.png" alt="">
+<a id="an-interface-should-be-small-and-focused-" class="anchor" href="#an-interface-should-be-small-and-focused-" aria-hidden="true"><span class="octicon octicon-link"></span></a>An interface should be small and focused <img src="images/should.png" alt="">
 </h2>
 
 <p>Interfaces should have a name that clearly explains the purpose or role of that interface within the system. Do not combine many vaguely related members on the same interface just because they were all on the same class. Separate the members based on the responsibility of those members so that callers only need to call or implement the interface related to a particular task. This rule is more commonly known as the <a href="http://www.objectmentor.com/resources/articles/isp.pdf">Interface Segregation Principle (ISP)</a>, one of the <a href="http://programmers.stackexchange.com/questions/202571/solid-principles-and-code-structure">SOLID principles</a>.</p>
 
 <h2>
-<a id="use-an-interface-rather-than-a-base-class-to-support-multiple-implementations-" class="anchor" href="#use-an-interface-rather-than-a-base-class-to-support-multiple-implementations-" aria-hidden="true"><span class="octicon octicon-link"></span></a>Use an interface rather than a base class to support multiple implementations <img src="imgs/may.png" alt="">
+<a id="use-an-interface-rather-than-a-base-class-to-support-multiple-implementations-" class="anchor" href="#use-an-interface-rather-than-a-base-class-to-support-multiple-implementations-" aria-hidden="true"><span class="octicon octicon-link"></span></a>Use an interface rather than a base class to support multiple implementations <img src="images/may.png" alt="">
 </h2>
 
 <p>If you want to expose an extension point from your class, expose it as an interface rather than a base class. You don't want to force users of that extension point to derive their implementations from a base-class that might have undesired behavior. However, for their convenience you may implement an (abstract) default implementation that can serve as a starting point.</p>
 
 <h2>
-<a id="use-an-interface-to-decouple-classes-from-each-other-" class="anchor" href="#use-an-interface-to-decouple-classes-from-each-other-" aria-hidden="true"><span class="octicon octicon-link"></span></a>Use an interface to decouple classes from each other <img src="imgs/should.png" alt="">
+<a id="use-an-interface-to-decouple-classes-from-each-other-" class="anchor" href="#use-an-interface-to-decouple-classes-from-each-other-" aria-hidden="true"><span class="octicon octicon-link"></span></a>Use an interface to decouple classes from each other <img src="images/should.png" alt="">
 </h2>
 
 <p>Interfaces are a very effective mechanism for decoupling classes from each other because:</p>
@@ -213,15 +211,15 @@ DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVI
 </ul>
 
 <h2>
-<a id="avoid-static-classes-" class="anchor" href="#avoid-static-classes-" aria-hidden="true"><span class="octicon octicon-link"></span></a>Avoid static classes <img src="imgs/may.png" alt="">
+<a id="avoid-static-classes-" class="anchor" href="#avoid-static-classes-" aria-hidden="true"><span class="octicon octicon-link"></span></a>Avoid static classes <img src="images/may.png" alt="">
 </h2>
 
 <p>Static classes very often lead to badly designed code, except implementing extension method containers. They are also very difficult to test in isolation unless you're willing to use some very hacky tools.</p>
 
-<p><img src="imgs/note.png" alt="NOTE"> If you really need a static class, mark it as <code>static</code> so that the compiler can prevent the class and its members from instantiating. This relieves you of creating an explicit private constructor.</p>
+<p><img src="images/note.png" alt="NOTE"> If you really need a static class, mark it as <code>static</code> so that the compiler can prevent the class and its members from instantiating. This relieves you of creating an explicit private constructor.</p>
 
 <h2>
-<a id="dont-hide-inherited-members-with-the-new-keyword-" class="anchor" href="#dont-hide-inherited-members-with-the-new-keyword-" aria-hidden="true"><span class="octicon octicon-link"></span></a>Don't hide inherited members with the <code>new</code> keyword <img src="imgs/must.png" alt="">
+<a id="dont-hide-inherited-members-with-the-new-keyword-" class="anchor" href="#dont-hide-inherited-members-with-the-new-keyword-" aria-hidden="true"><span class="octicon octicon-link"></span></a>Don't hide inherited members with the <code>new</code> keyword <img src="images/must.png" alt="">
 </h2>
 
 <p>Not only does the new keyword break <a href="http://en.wikipedia.org/wiki/Polymorphism_in_object-oriented_programming">Polymorphism</a>, one of the most essential object-orientation principles, it also makes subclasses more difficult to understand. Consider the following two classes:</p>
@@ -249,16 +247,16 @@ DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVI
 pocketBook.Print();         <span class="pl-c">// Will output "Printing PocketBook "</span>
 ((Book)pocketBook).Print(); <span class="pl-c">// Will output "Printing Book"</span></pre></div>
 
-<p>It <img src="imgs/must.png" alt="MUST"> <strong>NOT</strong> make a difference whether you call Print through a reference to the base class or through the derived class.</p>
+<p>It <img src="images/must.png" alt="MUST"> <strong>NOT</strong> make a difference whether you call Print through a reference to the base class or through the derived class.</p>
 
 <h2>
-<a id="treat-a-derived-object-as-if-it-were-a-base-class-object-" class="anchor" href="#treat-a-derived-object-as-if-it-were-a-base-class-object-" aria-hidden="true"><span class="octicon octicon-link"></span></a>Treat a derived object as if it were a base class object <img src="imgs/should.png" alt="">
+<a id="treat-a-derived-object-as-if-it-were-a-base-class-object-" class="anchor" href="#treat-a-derived-object-as-if-it-were-a-base-class-object-" aria-hidden="true"><span class="octicon octicon-link"></span></a>Treat a derived object as if it were a base class object <img src="images/should.png" alt="">
 </h2>
 
-<p>In other words, you <img src="imgs/should.png" alt="SHOULD"> be able to use a reference to an object of a derived class wherever a reference to its base class object is used without knowing the specific derived class. A very notorious example of a violation of this rule is throwing a <code>NotImplementedException</code> when overriding some of the base-class methods. A less subtle example is not honoring the behavior expected by the base-class. This rule is also known as the <a href="http://www.objectmentor.com/resources/articles/lsp.pdf">Liskov Substitution Principle (LSP)</a>, one of the <a href="http://programmers.stackexchange.com/questions/202571/solid-principles-and-code-structure">SOLID principles</a>.</p>
+<p>In other words, you <img src="images/should.png" alt="SHOULD"> be able to use a reference to an object of a derived class wherever a reference to its base class object is used without knowing the specific derived class. A very notorious example of a violation of this rule is throwing a <code>NotImplementedException</code> when overriding some of the base-class methods. A less subtle example is not honoring the behavior expected by the base-class. This rule is also known as the <a href="http://www.objectmentor.com/resources/articles/lsp.pdf">Liskov Substitution Principle (LSP)</a>, one of the <a href="http://programmers.stackexchange.com/questions/202571/solid-principles-and-code-structure">SOLID principles</a>.</p>
 
 <h2>
-<a id="dont-refer-to-derived-classes-from-the-base-class-" class="anchor" href="#dont-refer-to-derived-classes-from-the-base-class-" aria-hidden="true"><span class="octicon octicon-link"></span></a>Don't refer to derived classes from the base class <img src="imgs/must.png" alt="">
+<a id="dont-refer-to-derived-classes-from-the-base-class-" class="anchor" href="#dont-refer-to-derived-classes-from-the-base-class-" aria-hidden="true"><span class="octicon octicon-link"></span></a>Don't refer to derived classes from the base class <img src="images/must.png" alt="">
 </h2>
 
 <p>Having dependencies from a base class to its sub-classes goes against proper object-oriented design and might prevent other developers from adding new derived classes.</p>
@@ -272,27 +270,27 @@ pocketBook.Print();         <span class="pl-c">// Will output "Printing PocketBo
 
 <p>An object should not expose any other classes it depends on because callers may misuse that exposed property or method to access the object behind it. By doing so, you allow calling code to become coupled to the class you are using, and thereby limiting the chance you can easily replace it in a future stage.</p>
 
-<p><img src="imgs/note.png" alt="NOTE"> Using a class designed with the <a href="http://en.wikipedia.org/wiki/Fluent_interface">Fluent Interface</a> pattern like LINQ does seem to violate this rule, but it is simply returning itself so that method chaining is allowed.</p>
+<p><img src="images/note.png" alt="NOTE"> Using a class designed with the <a href="http://en.wikipedia.org/wiki/Fluent_interface">Fluent Interface</a> pattern like LINQ does seem to violate this rule, but it is simply returning itself so that method chaining is allowed.</p>
 
-<p><img src="imgs/exception.png" alt="EXCEPTION"> Inversion of Control (or Dependency Injection) frameworks such as <a href="http://msdn.microsoft.com/unity">Unity</a>, <a href="http://autofac.org">Autofac</a> or <a href="http://www.ninject.org">Ninject</a> often require you to expose a dependency as a public property. As long as this property is not used for anything else than dependency injection, it wouldn't be considered as a violation.</p>
+<p><img src="images/exception.png" alt="EXCEPTION"> Inversion of Control (or Dependency Injection) frameworks such as <a href="http://msdn.microsoft.com/unity">Unity</a>, <a href="http://autofac.org">Autofac</a> or <a href="http://www.ninject.org">Ninject</a> often require you to expose a dependency as a public property. As long as this property is not used for anything else than dependency injection, it wouldn't be considered as a violation.</p>
 
 <h2>
-<a id="avoid-bidirectional-dependencies-" class="anchor" href="#avoid-bidirectional-dependencies-" aria-hidden="true"><span class="octicon octicon-link"></span></a>Avoid bidirectional dependencies <img src="imgs/must.png" alt="">
+<a id="avoid-bidirectional-dependencies-" class="anchor" href="#avoid-bidirectional-dependencies-" aria-hidden="true"><span class="octicon octicon-link"></span></a>Avoid bidirectional dependencies <img src="images/must.png" alt="">
 </h2>
 
 <p>This means that two classes know about each other's public members or rely on each other's internal behavior. Refactoring or replacing one of those two classes requires changes on both parties and may involve a lot of unexpected work. The most obvious way of breaking that dependency is introducing an interface for one of the classes and using dependency injection.</p>
 
 <h2>
-<a id="classes-should-have-state-and-behavior-" class="anchor" href="#classes-should-have-state-and-behavior-" aria-hidden="true"><span class="octicon octicon-link"></span></a>Classes should have state and behavior <img src="imgs/must.png" alt="">
+<a id="classes-should-have-state-and-behavior-" class="anchor" href="#classes-should-have-state-and-behavior-" aria-hidden="true"><span class="octicon octicon-link"></span></a>Classes should have state and behavior <img src="images/must.png" alt="">
 </h2>
 
-<p>Unless your classes are only to transfer data over communication channels called <a href="http://martinfowler.com/eaaCatalog/dataTransferObject.html">Data Transfer Objects</a>, they <img src="imgs/must.png" alt="MUST"> have logics defining their state and behavior.</p>
+<p>Unless your classes are only to transfer data over communication channels called <a href="http://martinfowler.com/eaaCatalog/dataTransferObject.html">Data Transfer Objects</a>, they <img src="images/must.png" alt="MUST"> have logics defining their state and behavior.</p>
 
 <h1>
 <a id="member-design-guidelines" class="anchor" href="#member-design-guidelines" aria-hidden="true"><span class="octicon octicon-link"></span></a>Member Design Guidelines</h1>
 
 <h2>
-<a id="allow-properties-to-be-set-in-any-order-" class="anchor" href="#allow-properties-to-be-set-in-any-order-" aria-hidden="true"><span class="octicon octicon-link"></span></a>Allow properties to be set in any order <img src="imgs/must.png" alt="">
+<a id="allow-properties-to-be-set-in-any-order-" class="anchor" href="#allow-properties-to-be-set-in-any-order-" aria-hidden="true"><span class="octicon octicon-link"></span></a>Allow properties to be set in any order <img src="images/must.png" alt="">
 </h2>
 
 <p>Properties should be stateless with respect to other properties, i.e. there should not be a difference between first setting property <code>A</code> and then <code>B</code> or vice versa.</p>
@@ -309,10 +307,10 @@ pocketBook.Print();         <span class="pl-c">// Will output "Printing PocketBo
 <li>the operation causes a side effect such as changing some internal state not directly related the property (which violates the <a href="http://martinfowler.com/bliki/CommandQuerySeparation.html">Command Query Separation</a>).</li>
 </ul>
 
-<p><img src="imgs/exception.png" alt="EXCEPTION"> Populating an internal cache or implementing <a href="http://www.martinfowler.com/eaaCatalog/lazyLoad.html">lazy-loading</a> is a good exception.</p>
+<p><img src="images/exception.png" alt="EXCEPTION"> Populating an internal cache or implementing <a href="http://www.martinfowler.com/eaaCatalog/lazyLoad.html">lazy-loading</a> is a good exception.</p>
 
 <h2>
-<a id="dont-use-mutually-exclusive-properties-" class="anchor" href="#dont-use-mutually-exclusive-properties-" aria-hidden="true"><span class="octicon octicon-link"></span></a>Don't use mutually exclusive properties <img src="imgs/must.png" alt="">
+<a id="dont-use-mutually-exclusive-properties-" class="anchor" href="#dont-use-mutually-exclusive-properties-" aria-hidden="true"><span class="octicon octicon-link"></span></a>Don't use mutually exclusive properties <img src="images/must.png" alt="">
 </h2>
 
 <p>Having properties that cannot be used at the same time typically signals a type that is representing two conflicting concepts. Even though those concepts may share some of the behavior and state, they obviously have different rules that do not cooperate.</p>
@@ -320,13 +318,13 @@ pocketBook.Print();         <span class="pl-c">// Will output "Printing PocketBo
 <p>This violation is often seen in domain models and introduces all kinds of conditional logic related to those conflicting rules, causing a ripple effect that significantly worsens the maintenance burden.</p>
 
 <h2>
-<a id="a-method-or-property-does-only-one-thing-" class="anchor" href="#a-method-or-property-does-only-one-thing-" aria-hidden="true"><span class="octicon octicon-link"></span></a>A method or property does only one thing <img src="imgs/must.png" alt="">
+<a id="a-method-or-property-does-only-one-thing-" class="anchor" href="#a-method-or-property-does-only-one-thing-" aria-hidden="true"><span class="octicon octicon-link"></span></a>A method or property does only one thing <img src="images/must.png" alt="">
 </h2>
 
-<p>Based on <a href="http://www.objectmentor.com/resources/articles/srp.pdf">SRP</a>, a method <img src="imgs/must.png" alt="MUST"> have a single responsibility.</p>
+<p>Based on <a href="http://www.objectmentor.com/resources/articles/srp.pdf">SRP</a>, a method <img src="images/must.png" alt="MUST"> have a single responsibility.</p>
 
 <h2>
-<a id="dont-expose-stateful-objects-through-static-members-" class="anchor" href="#dont-expose-stateful-objects-through-static-members-" aria-hidden="true"><span class="octicon octicon-link"></span></a>Don't expose stateful objects through static members <img src="imgs/should.png" alt="">
+<a id="dont-expose-stateful-objects-through-static-members-" class="anchor" href="#dont-expose-stateful-objects-through-static-members-" aria-hidden="true"><span class="octicon octicon-link"></span></a>Don't expose stateful objects through static members <img src="images/should.png" alt="">
 </h2>
 
 <p>A stateful object is an object that contains many properties and lots of behavior behind that. If you expose such an object through a static property or method of some other object, it will be very difficult to refactor or unit test a class that relies on such a stateful object. In general, introducing a construction like that is a great example of violating many of the guidelines of this document.</p>
@@ -334,27 +332,27 @@ pocketBook.Print();         <span class="pl-c">// Will output "Printing PocketBo
 <p>A classic example of this is the <code>HttpContext.Current</code> property, part of ASP.NET. Many see the <code>HttpContext</code> class as a source for a lot of ugly code. In fact, the testing guideline <a href="http://msdn.microsoft.com/en-us/magazine/dd263069.aspx#id0070015">Isolate the Ugly Stuff</a> often refers to this class.</p>
 
 <h2>
-<a id="return-an-ienumerablet-or-icollectiont-instead-of-a-concrete-collection-class-" class="anchor" href="#return-an-ienumerablet-or-icollectiont-instead-of-a-concrete-collection-class-" aria-hidden="true"><span class="octicon octicon-link"></span></a>Return an <code>IEnumerable&lt;T&gt;</code> or <code>ICollection&lt;T&gt;</code> instead of a concrete collection class <img src="imgs/should.png" alt="">
+<a id="return-an-ienumerablet-or-icollectiont-instead-of-a-concrete-collection-class-" class="anchor" href="#return-an-ienumerablet-or-icollectiont-instead-of-a-concrete-collection-class-" aria-hidden="true"><span class="octicon octicon-link"></span></a>Return an <code>IEnumerable&lt;T&gt;</code> or <code>ICollection&lt;T&gt;</code> instead of a concrete collection class <img src="images/should.png" alt="">
 </h2>
 
 <p>In general, you don't want callers to be able to change an internal collection, so don't return arrays, lists or other collection classes directly. Instead, return an <code>IEnumerable&lt;T&gt;</code>, or, if the caller must be able to determine the count, an <code>ICollection&lt;T&gt;</code>.</p>
 
-<p><img src="imgs/note.png" alt="NOTE"> In .NET 4.5, you can also use <code>IReadOnlyCollection&lt;T&gt;</code>, <code>IReadOnlyList&lt;T&gt;</code> or <code>IReadOnlyDictionary&lt;TKey, TValue&gt;</code>.</p>
+<p><img src="images/note.png" alt="NOTE"> In .NET 4.5, you can also use <code>IReadOnlyCollection&lt;T&gt;</code>, <code>IReadOnlyList&lt;T&gt;</code> or <code>IReadOnlyDictionary&lt;TKey, TValue&gt;</code>.</p>
 
 <h2>
-<a id="properties-methods-and-arguments-representing-strings-or-collections-should-never-be-null-" class="anchor" href="#properties-methods-and-arguments-representing-strings-or-collections-should-never-be-null-" aria-hidden="true"><span class="octicon octicon-link"></span></a>Properties, methods and arguments representing strings or collections should never be <code>null</code> <img src="imgs/must.png" alt="">
+<a id="properties-methods-and-arguments-representing-strings-or-collections-should-never-be-null-" class="anchor" href="#properties-methods-and-arguments-representing-strings-or-collections-should-never-be-null-" aria-hidden="true"><span class="octicon octicon-link"></span></a>Properties, methods and arguments representing strings or collections should never be <code>null</code> <img src="images/must.png" alt="">
 </h2>
 
 <p>Returning <code>null</code> can be unexpected by the caller. Always return an <strong>empty collection</strong> or an <strong>empty string</strong> instead of a <code>null</code> reference. This also prevents cluttering your code base with additional checks for <code>null</code>, or even worse, <code>String.IsNotNullOrEmpty()</code> or <code>String.IsNullOrWhiteSpace()</code>.</p>
 
 <h2>
-<a id="define-parameters-as-specific-as-possible-" class="anchor" href="#define-parameters-as-specific-as-possible-" aria-hidden="true"><span class="octicon octicon-link"></span></a>Define parameters as specific as possible <img src="imgs/should.png" alt="">
+<a id="define-parameters-as-specific-as-possible-" class="anchor" href="#define-parameters-as-specific-as-possible-" aria-hidden="true"><span class="octicon octicon-link"></span></a>Define parameters as specific as possible <img src="images/should.png" alt="">
 </h2>
 
 <p>If your member needs a specific piece of data, define parameters as specific as that and don't take a container object instead. For instance, consider a method that needs a connection string that is exposed through some central <code>IConfiguration</code> interface. Rather than taking a dependency on the entire configuration, just define a parameter for the connection string. This not only prevents unnecessary coupling, it also improved maintainability in a long run.</p>
 
 <h2>
-<a id="consider-using-domain-specific-value-types-rather-than-primitives-" class="anchor" href="#consider-using-domain-specific-value-types-rather-than-primitives-" aria-hidden="true"><span class="octicon octicon-link"></span></a>Consider using domain-specific value types rather than primitives <img src="imgs/may.png" alt="">
+<a id="consider-using-domain-specific-value-types-rather-than-primitives-" class="anchor" href="#consider-using-domain-specific-value-types-rather-than-primitives-" aria-hidden="true"><span class="octicon octicon-link"></span></a>Consider using domain-specific value types rather than primitives <img src="images/may.png" alt="">
 </h2>
 
 <p>Instead of using strings, integers and decimals for representing domain specific types such as an ISBN number, an email address or amount of money, consider created dedicated value objects that wrap both the data and the validation rules that apply to it. By doing this, you prevent ending up having multiple implementations of the same business rules, which both improves maintainability and prevents bugs.</p>
@@ -363,31 +361,31 @@ pocketBook.Print();         <span class="pl-c">// Will output "Printing PocketBo
 <a id="miscellaneous-design-guidelines" class="anchor" href="#miscellaneous-design-guidelines" aria-hidden="true"><span class="octicon octicon-link"></span></a>Miscellaneous Design Guidelines</h1>
 
 <h2>
-<a id="throw-exceptions-rather-than-returning-some-kind-of-status-value-" class="anchor" href="#throw-exceptions-rather-than-returning-some-kind-of-status-value-" aria-hidden="true"><span class="octicon octicon-link"></span></a>Throw exceptions rather than returning some kind of status value <img src="imgs/should.png" alt="">
+<a id="throw-exceptions-rather-than-returning-some-kind-of-status-value-" class="anchor" href="#throw-exceptions-rather-than-returning-some-kind-of-status-value-" aria-hidden="true"><span class="octicon octicon-link"></span></a>Throw exceptions rather than returning some kind of status value <img src="images/should.png" alt="">
 </h2>
 
 <p>A code base that uses return values for reporting the success or failure tends to have nested if-statements sprinkled all over the code. Quite often, a caller forgets to check the return value anyhow. Structured exception handling has been introduced to allow you to throw exceptions and catch or replace exceptions at a higher layer. In most systems it is quite common to throw exceptions whenever an unexpected situations occurs.</p>
 
 <h2>
-<a id="provide-a-rich-and-meaningful-exception-message-text-" class="anchor" href="#provide-a-rich-and-meaningful-exception-message-text-" aria-hidden="true"><span class="octicon octicon-link"></span></a>Provide a rich and meaningful exception message text <img src="imgs/should.png" alt="">
+<a id="provide-a-rich-and-meaningful-exception-message-text-" class="anchor" href="#provide-a-rich-and-meaningful-exception-message-text-" aria-hidden="true"><span class="octicon octicon-link"></span></a>Provide a rich and meaningful exception message text <img src="images/should.png" alt="">
 </h2>
 
 <p>The message should explain the cause of the exception and clearly describe what needs to be done to avoid the exception.</p>
 
 <h2>
-<a id="throw-the-most-specific-exception-that-is-appropriate-" class="anchor" href="#throw-the-most-specific-exception-that-is-appropriate-" aria-hidden="true"><span class="octicon octicon-link"></span></a>Throw the most specific exception that is appropriate <img src="imgs/may.png" alt="">
+<a id="throw-the-most-specific-exception-that-is-appropriate-" class="anchor" href="#throw-the-most-specific-exception-that-is-appropriate-" aria-hidden="true"><span class="octicon octicon-link"></span></a>Throw the most specific exception that is appropriate <img src="images/may.png" alt="">
 </h2>
 
 <p>For example, if a method receives a <code>null</code> argument, it should throw <code>ArgumentNullException</code> instead of its base type <code>ArgumentException</code>.</p>
 
 <h2>
-<a id="dont-swallow-errors-by-catching-generic-exceptions-" class="anchor" href="#dont-swallow-errors-by-catching-generic-exceptions-" aria-hidden="true"><span class="octicon octicon-link"></span></a>Don't swallow errors by catching generic exceptions <img src="imgs/must.png" alt="">
+<a id="dont-swallow-errors-by-catching-generic-exceptions-" class="anchor" href="#dont-swallow-errors-by-catching-generic-exceptions-" aria-hidden="true"><span class="octicon octicon-link"></span></a>Don't swallow errors by catching generic exceptions <img src="images/must.png" alt="">
 </h2>
 
 <p>Avoid swallowing errors by catching non-specific exceptions, such as <code>Exception</code>, <code>SystemException</code>, and so on, in application code. Only top-level code, such as a last-chance exception handler, should catch a non-specific exception for logging purposes and a graceful shutdown of the application.</p>
 
 <h2>
-<a id="properly-handle-exceptions-in-asynchronous-code-" class="anchor" href="#properly-handle-exceptions-in-asynchronous-code-" aria-hidden="true"><span class="octicon octicon-link"></span></a>Properly handle exceptions in asynchronous code <img src="imgs/should.png" alt="">
+<a id="properly-handle-exceptions-in-asynchronous-code-" class="anchor" href="#properly-handle-exceptions-in-asynchronous-code-" aria-hidden="true"><span class="octicon octicon-link"></span></a>Properly handle exceptions in asynchronous code <img src="images/should.png" alt="">
 </h2>
 
 <p>When throwing or handling exceptions in code that uses <code>async</code>/<code>await</code> or a <code>Task</code> remember the following two rules:</p>
@@ -398,7 +396,7 @@ pocketBook.Print();         <span class="pl-c">// Will output "Printing PocketBo
 </ul>
 
 <h2>
-<a id="always-check-an-event-handler-delegate-for-null-" class="anchor" href="#always-check-an-event-handler-delegate-for-null-" aria-hidden="true"><span class="octicon octicon-link"></span></a>Always check an event handler delegate for <code>null</code> <img src="imgs/must.png" alt="">
+<a id="always-check-an-event-handler-delegate-for-null-" class="anchor" href="#always-check-an-event-handler-delegate-for-null-" aria-hidden="true"><span class="octicon octicon-link"></span></a>Always check an event handler delegate for <code>null</code> <img src="images/must.png" alt="">
 </h2>
 
 <p>An event that has no subscribers is <code>null</code>, so before invoking, always make sure that the delegate list represented by the event variable is not <code>null</code>. Furthermore, to prevent conflicting changes from concurrent threads, use a temporary variable to prevent concurrent changes to the delegate.</p>
@@ -418,31 +416,31 @@ pocketBook.Print();         <span class="pl-c">// Will output "Printing PocketBo
 <div class="highlight highlight-c#"><pre><span class="pl-s">event</span> EventHandler&lt;NotifyEventArgs&gt; Notify = <span class="pl-s">delegate</span> {};</pre></div>
 
 <h2>
-<a id="use-a-protected-virtual-method-to-raise-each-event-" class="anchor" href="#use-a-protected-virtual-method-to-raise-each-event-" aria-hidden="true"><span class="octicon octicon-link"></span></a>Use a protected virtual method to raise each event <img src="imgs/should.png" alt="">
+<a id="use-a-protected-virtual-method-to-raise-each-event-" class="anchor" href="#use-a-protected-virtual-method-to-raise-each-event-" aria-hidden="true"><span class="octicon octicon-link"></span></a>Use a protected virtual method to raise each event <img src="images/should.png" alt="">
 </h2>
 
 <p>Complying with this guideline allows derived classes to handle a base class event by overriding the protected method. The name of the protected virtual method should be the same as the event name prefixed with On. For example, the protected virtual method for an event named <code>TimeChanged</code> is named <code>OnTimeChanged</code>.</p>
 
-<p><img src="imgs/note.png" alt="NOTE"> Derived classes that override the protected virtual method are not required to call the base class implementation. The base class must continue to work correctly even if its implementation is not called.</p>
+<p><img src="images/note.png" alt="NOTE"> Derived classes that override the protected virtual method are not required to call the base class implementation. The base class must continue to work correctly even if its implementation is not called.</p>
 
 <h2>
-<a id="consider-providing-property-changed-events-" class="anchor" href="#consider-providing-property-changed-events-" aria-hidden="true"><span class="octicon octicon-link"></span></a>Consider providing property-changed events <img src="imgs/may.png" alt="">
+<a id="consider-providing-property-changed-events-" class="anchor" href="#consider-providing-property-changed-events-" aria-hidden="true"><span class="octicon octicon-link"></span></a>Consider providing property-changed events <img src="images/may.png" alt="">
 </h2>
 
 <p>Consider providing events that are raised when certain properties are changed. Such an event should be named <code>PropertyChanged</code>, where Property should be replaced with the name of the property with which this event is associated.</p>
 
-<p><img src="imgs/note.png" alt="NOTE"> If your class has many properties that require corresponding events, consider implementing the <code>INotifyPropertyChanged</code> interface instead. It is often used in the <a href="http://martinfowler.com/eaaDev/PresentationModel.html">Presentation Model</a> and <a href="http://msdn.microsoft.com/en-us/magazine/dd419663.aspx">Model-View-ViewModel</a> patterns.</p>
+<p><img src="images/note.png" alt="NOTE"> If your class has many properties that require corresponding events, consider implementing the <code>INotifyPropertyChanged</code> interface instead. It is often used in the <a href="http://martinfowler.com/eaaDev/PresentationModel.html">Presentation Model</a> and <a href="http://msdn.microsoft.com/en-us/magazine/dd419663.aspx">Model-View-ViewModel</a> patterns.</p>
 
 <h2>
-<a id="dont-pass-null-as-the-sender-argument-when-raising-an-event-" class="anchor" href="#dont-pass-null-as-the-sender-argument-when-raising-an-event-" aria-hidden="true"><span class="octicon octicon-link"></span></a>Don't pass <code>null</code> as the sender argument when raising an event <img src="imgs/must.png" alt="">
+<a id="dont-pass-null-as-the-sender-argument-when-raising-an-event-" class="anchor" href="#dont-pass-null-as-the-sender-argument-when-raising-an-event-" aria-hidden="true"><span class="octicon octicon-link"></span></a>Don't pass <code>null</code> as the sender argument when raising an event <img src="images/must.png" alt="">
 </h2>
 
 <p>Often, an event handler is used to handle similar events from multiple senders. The sender argument is then used to get to the source of the event. Always pass a reference to the source (typically <code>this</code>) when raising the event. Furthermore don't pass <code>null</code> as the event data parameter when raising an event. If there is no event data, pass <code>EventArgs.Empty</code> instead of <code>null</code>.</p>
 
-<p><img src="imgs/exception.png" alt="EXCEPTION"> On static events, the sender argument <img src="imgs/should.png" alt="SHOULD"> be <code>null</code>.</p>
+<p><img src="images/exception.png" alt="EXCEPTION"> On static events, the sender argument <img src="images/should.png" alt="SHOULD"> be <code>null</code>.</p>
 
 <h2>
-<a id="use-generic-constraints-if-applicable-" class="anchor" href="#use-generic-constraints-if-applicable-" aria-hidden="true"><span class="octicon octicon-link"></span></a>Use generic constraints if applicable <img src="imgs/should.png" alt="">
+<a id="use-generic-constraints-if-applicable-" class="anchor" href="#use-generic-constraints-if-applicable-" aria-hidden="true"><span class="octicon octicon-link"></span></a>Use generic constraints if applicable <img src="images/should.png" alt="">
 </h2>
 
 <p>Instead of casting to and from the <code>object</code> type in generic types or methods, use <code>where</code> constraints or the <code>as</code> operator to specify the exact characteristics of the generic parameter. For example:</p>
@@ -472,7 +470,7 @@ pocketBook.Print();         <span class="pl-c">// Will output "Printing PocketBo
 }</pre></div>
 
 <h2>
-<a id="evaluate-the-result-of-a-linq-expression-before-returning-it-" class="anchor" href="#evaluate-the-result-of-a-linq-expression-before-returning-it-" aria-hidden="true"><span class="octicon octicon-link"></span></a>Evaluate the result of a LINQ expression before returning it <img src="imgs/must.png" alt="">
+<a id="evaluate-the-result-of-a-linq-expression-before-returning-it-" class="anchor" href="#evaluate-the-result-of-a-linq-expression-before-returning-it-" aria-hidden="true"><span class="octicon octicon-link"></span></a>Evaluate the result of a LINQ expression before returning it <img src="images/must.png" alt="">
 </h2>
 
 <p>Consider the following code snippet:</p>
@@ -492,19 +490,19 @@ pocketBook.Print();         <span class="pl-c">// Will output "Printing PocketBo
 <a id="maintainability-guidelines" class="anchor" href="#maintainability-guidelines" aria-hidden="true"><span class="octicon octicon-link"></span></a>Maintainability Guidelines</h1>
 
 <h2>
-<a id="methods-does-not-exceed-7-statements-" class="anchor" href="#methods-does-not-exceed-7-statements-" aria-hidden="true"><span class="octicon octicon-link"></span></a>Methods does not exceed 7 statements <img src="imgs/must.png" alt="">
+<a id="methods-does-not-exceed-7-statements-" class="anchor" href="#methods-does-not-exceed-7-statements-" aria-hidden="true"><span class="octicon octicon-link"></span></a>Methods does not exceed 7 statements <img src="images/must.png" alt="">
 </h2>
 
 <p>A method that requires more than 7 statements is simply doing too much or has too many responsibilities. It also requires the human mind to analyze the exact statements to understand what the code is doing. Break it down in multiple small and focused methods with self-explaining names, but make sure the high-level algorithm is still clear.</p>
 
 <h2>
-<a id="make-all-members-private-and-types-internal-by-default-" class="anchor" href="#make-all-members-private-and-types-internal-by-default-" aria-hidden="true"><span class="octicon octicon-link"></span></a>Make all members <code>private</code> and types <code>internal</code> by default <img src="imgs/must.png" alt="">
+<a id="make-all-members-private-and-types-internal-by-default-" class="anchor" href="#make-all-members-private-and-types-internal-by-default-" aria-hidden="true"><span class="octicon octicon-link"></span></a>Make all members <code>private</code> and types <code>internal</code> by default <img src="images/must.png" alt="">
 </h2>
 
 <p>To make a more conscious decision on which members to make available to other classes first restrict the scope as much as possible. Then carefully decide what to expose as a public member or type.</p>
 
 <h2>
-<a id="avoid-conditions-with-double-negatives-" class="anchor" href="#avoid-conditions-with-double-negatives-" aria-hidden="true"><span class="octicon octicon-link"></span></a>Avoid conditions with double negatives <img src="imgs/should.png" alt="">
+<a id="avoid-conditions-with-double-negatives-" class="anchor" href="#avoid-conditions-with-double-negatives-" aria-hidden="true"><span class="octicon octicon-link"></span></a>Avoid conditions with double negatives <img src="images/should.png" alt="">
 </h2>
 
 <p>Although a property like <code>customer.HasNoOrders</code> make sense, avoid using it in a negative condition like this:</p>
@@ -514,31 +512,31 @@ pocketBook.Print();         <span class="pl-c">// Will output "Printing PocketBo
 <p>Double negatives are more difficult to grasp than simple expressions, and people tend to read over the double negative easily.</p>
 
 <h2>
-<a id="name-assemblies-after-their-contained-namespace-" class="anchor" href="#name-assemblies-after-their-contained-namespace-" aria-hidden="true"><span class="octicon octicon-link"></span></a>Name assemblies after their contained namespace <img src="imgs/may.png" alt="">
+<a id="name-assemblies-after-their-contained-namespace-" class="anchor" href="#name-assemblies-after-their-contained-namespace-" aria-hidden="true"><span class="octicon octicon-link"></span></a>Name assemblies after their contained namespace <img src="images/may.png" alt="">
 </h2>
 
 <p>All DLLs should be named according to the pattern <code>&lt;Company&gt;.&lt;Component&gt;.dll</code> where <code>&lt;Company&gt;</code> refers to your company's name and <code>&lt;Component&gt;</code> contains one or more dot-separated clauses. For example <code>Dnb.Web.Controls.dll</code>.</p>
 
 <p>As an example, consider a group of classes organized under the namespace <code>Dnb.Web.Binding</code> exposed by a certain assembly. According to this guideline, that assembly should be called <code>Dnb.Web.Binding.dll</code>.</p>
 
-<p><img src="imgs/exception.png" alt="EXCEPTION"> If you decide to combine classes from multiple unrelated namespaces into one assembly, consider suffix to the assembly with <code>Core</code>, but do not use that suffix in the namespaces. For instance, <code>Dnb.Consulting.Core.dll</code>.</p>
+<p><img src="images/exception.png" alt="EXCEPTION"> If you decide to combine classes from multiple unrelated namespaces into one assembly, consider suffix to the assembly with <code>Core</code>, but do not use that suffix in the namespaces. For instance, <code>Dnb.Consulting.Core.dll</code>.</p>
 
 <h2>
-<a id="name-a-source-file-to-the-type-it-contains-" class="anchor" href="#name-a-source-file-to-the-type-it-contains-" aria-hidden="true"><span class="octicon octicon-link"></span></a>Name a source file to the type it contains <img src="imgs/may.png" alt="">
+<a id="name-a-source-file-to-the-type-it-contains-" class="anchor" href="#name-a-source-file-to-the-type-it-contains-" aria-hidden="true"><span class="octicon octicon-link"></span></a>Name a source file to the type it contains <img src="images/may.png" alt="">
 </h2>
 
 <p>Use Pascal casing for naming the file and don’t use underscores.</p>
 
 <h2>
-<a id="limit-the-contents-of-a-source-code-file-to-one-type-" class="anchor" href="#limit-the-contents-of-a-source-code-file-to-one-type-" aria-hidden="true"><span class="octicon octicon-link"></span></a>Limit the contents of a source code file to one type <img src="imgs/may.png" alt="">
+<a id="limit-the-contents-of-a-source-code-file-to-one-type-" class="anchor" href="#limit-the-contents-of-a-source-code-file-to-one-type-" aria-hidden="true"><span class="octicon octicon-link"></span></a>Limit the contents of a source code file to one type <img src="images/may.png" alt="">
 </h2>
 
 <p>Make sure that one source file can be responsible for fully or partially contributing to one class.</p>
 
-<p><img src="imgs/exception.png" alt="EXCEPTION"> Nested types can, for obvious reasons, be part of the same file.</p>
+<p><img src="images/exception.png" alt="EXCEPTION"> Nested types can, for obvious reasons, be part of the same file.</p>
 
 <h2>
-<a id="name-a-source-file-to-the-logical-function-of-the-partial-type-" class="anchor" href="#name-a-source-file-to-the-logical-function-of-the-partial-type-" aria-hidden="true"><span class="octicon octicon-link"></span></a>Name a source file to the logical function of the partial type <img src="imgs/may.png" alt="">
+<a id="name-a-source-file-to-the-logical-function-of-the-partial-type-" class="anchor" href="#name-a-source-file-to-the-logical-function-of-the-partial-type-" aria-hidden="true"><span class="octicon octicon-link"></span></a>Name a source file to the logical function of the partial type <img src="images/may.png" alt="">
 </h2>
 
 <p>When using partial types and allocating a part per file, name each file after the logical part that part plays. For example:</p>
@@ -556,7 +554,7 @@ pocketBook.Print();         <span class="pl-c">// Will output "Printing PocketBo
 }</pre></div>
 
 <h2>
-<a id="use-using-statements-instead-of-fully-qualified-type-names-" class="anchor" href="#use-using-statements-instead-of-fully-qualified-type-names-" aria-hidden="true"><span class="octicon octicon-link"></span></a>Use using statements instead of fully qualified type names <img src="imgs/may.png" alt="">
+<a id="use-using-statements-instead-of-fully-qualified-type-names-" class="anchor" href="#use-using-statements-instead-of-fully-qualified-type-names-" aria-hidden="true"><span class="octicon octicon-link"></span></a>Use using statements instead of fully qualified type names <img src="images/may.png" alt="">
 </h2>
 
 <p>Limit usage of fully qualified type names to prevent name clashing. For example, don't do this.</p>
@@ -574,7 +572,7 @@ pocketBook.Print();         <span class="pl-c">// Will output "Printing PocketBo
 <div class="highlight highlight-c#"><pre><span class="pl-k">using</span> Label = System.Web.UI.WebControls.Label;</pre></div>
 
 <h2>
-<a id="dont-use-magic-numbers-" class="anchor" href="#dont-use-magic-numbers-" aria-hidden="true"><span class="octicon octicon-link"></span></a>Don't use <strong>magic</strong> numbers <img src="imgs/must.png" alt="">
+<a id="dont-use-magic-numbers-" class="anchor" href="#dont-use-magic-numbers-" aria-hidden="true"><span class="octicon octicon-link"></span></a>Don't use <strong>magic</strong> numbers <img src="images/must.png" alt="">
 </h2>
 
 <p>Don't use literal values, either numeric or strings, in your code other than to define symbolic constants. For example:</p>
@@ -598,10 +596,10 @@ WaitMilliseconds(waitTimeInSeconds * <span class="pl-c1">1000</span>); <span cla
     <span class="pl-s">public</span> <span class="pl-s">const</span> <span class="pl-st">int</span> HighWaterMark = <span class="pl-c1">3</span> * MaxItems / <span class="pl-c1">4</span>; <span class="pl-c">// at 75%</span>
 }</pre></div>
 
-<p><img src="imgs/note.png" alt="NOTE"> An enumeration can often be used for certain types of symbolic constants.</p>
+<p><img src="images/note.png" alt="NOTE"> An enumeration can often be used for certain types of symbolic constants.</p>
 
 <h2>
-<a id="only-use-var-when-the-type-is-very-obvious-" class="anchor" href="#only-use-var-when-the-type-is-very-obvious-" aria-hidden="true"><span class="octicon octicon-link"></span></a>Only use <code>var</code> when the type is very obvious <img src="imgs/must.png" alt="">
+<a id="only-use-var-when-the-type-is-very-obvious-" class="anchor" href="#only-use-var-when-the-type-is-very-obvious-" aria-hidden="true"><span class="octicon octicon-link"></span></a>Only use <code>var</code> when the type is very obvious <img src="images/must.png" alt="">
 </h2>
 
 <p>Only use <code>var</code> as the result of a LINQ query, or if the type is very obvious from the same statement and using it would improve readability. So don't</p>
@@ -621,13 +619,13 @@ WaitMilliseconds(waitTimeInSeconds * <span class="pl-c1">1000</span>); <span cla
 <p>In all of three above examples it is clear what type to expect. For a more detailed rationale about the advantages and disadvantages of using <code>var</code>, read Eric Lippert's <a href="http://blogs.msdn.com/b/ericlippert/archive/2011/04/20/uses-and-misuses-of-implicit-typing.aspx">Uses and misuses of implicit typing</a>.</p>
 
 <h2>
-<a id="declare-and-initialize-variables-as-late-as-possible-" class="anchor" href="#declare-and-initialize-variables-as-late-as-possible-" aria-hidden="true"><span class="octicon octicon-link"></span></a>Declare and initialize variables as late as possible <img src="imgs/should.png" alt="">
+<a id="declare-and-initialize-variables-as-late-as-possible-" class="anchor" href="#declare-and-initialize-variables-as-late-as-possible-" aria-hidden="true"><span class="octicon octicon-link"></span></a>Declare and initialize variables as late as possible <img src="images/should.png" alt="">
 </h2>
 
 <p>Avoid the C and Visual Basic styles where all variables have to be defined at the beginning of a block, but rather define and initialize each variable at the point where it is needed.</p>
 
 <h2>
-<a id="assign-each-variable-in-a-separate-statement-" class="anchor" href="#assign-each-variable-in-a-separate-statement-" aria-hidden="true"><span class="octicon octicon-link"></span></a>Assign each variable in a separate statement <img src="imgs/must.png" alt="">
+<a id="assign-each-variable-in-a-separate-statement-" class="anchor" href="#assign-each-variable-in-a-separate-statement-" aria-hidden="true"><span class="octicon octicon-link"></span></a>Assign each variable in a separate statement <img src="images/must.png" alt="">
 </h2>
 
 <p>Don't use confusing constructs like the one below.</p>
@@ -635,7 +633,7 @@ WaitMilliseconds(waitTimeInSeconds * <span class="pl-c1">1000</span>); <span cla
 <div class="highlight highlight-c#"><pre><span class="pl-k">var</span> result = someField = GetSomeMethod();</pre></div>
 
 <h2>
-<a id="favour-object-and-collection-initialisers-over-separate-statements-" class="anchor" href="#favour-object-and-collection-initialisers-over-separate-statements-" aria-hidden="true"><span class="octicon octicon-link"></span></a>Favour Object and Collection Initialisers over separate statements <img src="imgs/should.png" alt="">
+<a id="favour-object-and-collection-initialisers-over-separate-statements-" class="anchor" href="#favour-object-and-collection-initialisers-over-separate-statements-" aria-hidden="true"><span class="octicon octicon-link"></span></a>Favour Object and Collection Initialisers over separate statements <img src="images/should.png" alt="">
 </h2>
 
 <p>Avoid</p>
@@ -667,7 +665,7 @@ countries.Add(<span class="pl-s1"><span class="pl-pds">"</span>United States<spa
                 };</pre></div>
 
 <h2>
-<a id="dont-make-explicit-comparisons-to-true-or-false-" class="anchor" href="#dont-make-explicit-comparisons-to-true-or-false-" aria-hidden="true"><span class="octicon octicon-link"></span></a>Don't make explicit comparisons to <code>true</code> or <code>false</code> <img src="imgs/must.png" alt="">
+<a id="dont-make-explicit-comparisons-to-true-or-false-" class="anchor" href="#dont-make-explicit-comparisons-to-true-or-false-" aria-hidden="true"><span class="octicon octicon-link"></span></a>Don't make explicit comparisons to <code>true</code> or <code>false</code> <img src="images/must.png" alt="">
 </h2>
 
 <p>It is usually bad style to compare a <code>bool</code> type expression to <code>true</code> or <code>false</code>. For example:</p>
@@ -679,7 +677,7 @@ countries.Add(<span class="pl-s1"><span class="pl-pds">"</span>United States<spa
 <span class="pl-k">while</span> (condition)                             <span class="pl-c">// OK</span></pre></div>
 
 <h2>
-<a id="dont-change-a-loop-variable-inside-a-for-or-foreach-loop-" class="anchor" href="#dont-change-a-loop-variable-inside-a-for-or-foreach-loop-" aria-hidden="true"><span class="octicon octicon-link"></span></a>Don't change a loop variable inside a for or <code>foreach</code> loop <img src="imgs/should.png" alt="">
+<a id="dont-change-a-loop-variable-inside-a-for-or-foreach-loop-" class="anchor" href="#dont-change-a-loop-variable-inside-a-for-or-foreach-loop-" aria-hidden="true"><span class="octicon octicon-link"></span></a>Don't change a loop variable inside a for or <code>foreach</code> loop <img src="images/should.png" alt="">
 </h2>
 
 <p>Updating the loop variable within the loop body is generally considered confusing. It is even worse that the loop variables are modified in more than one place in the loop. Consider <code>break</code> or <code>continue</code> instead, to change the loop variables.</p>
@@ -693,13 +691,13 @@ countries.Add(<span class="pl-s1"><span class="pl-pds">"</span>United States<spa
 }</pre></div>
 
 <h2>
-<a id="avoid-nested-loops-" class="anchor" href="#avoid-nested-loops-" aria-hidden="true"><span class="octicon octicon-link"></span></a>Avoid nested loops <img src="imgs/should.png" alt="">
+<a id="avoid-nested-loops-" class="anchor" href="#avoid-nested-loops-" aria-hidden="true"><span class="octicon octicon-link"></span></a>Avoid nested loops <img src="images/should.png" alt="">
 </h2>
 
 <p>A method that nests loops is more difficult to understand than one with only a single loop. In fact, in most cases having nested loops can be replaced with a much simpler LINQ query that uses the <code>from</code> keyword twice or more to join the data.</p>
 
 <h2>
-<a id="always-add-a-block-after-keywords-such-as-if-else-while-for-foreach-and-case-" class="anchor" href="#always-add-a-block-after-keywords-such-as-if-else-while-for-foreach-and-case-" aria-hidden="true"><span class="octicon octicon-link"></span></a>Always add a block after keywords such as <code>if</code>, <code>else</code>, <code>while</code>, <code>for</code>, <code>foreach</code> and <code>case</code> <img src="imgs/should.png" alt="">
+<a id="always-add-a-block-after-keywords-such-as-if-else-while-for-foreach-and-case-" class="anchor" href="#always-add-a-block-after-keywords-such-as-if-else-while-for-foreach-and-case-" aria-hidden="true"><span class="octicon octicon-link"></span></a>Always add a block after keywords such as <code>if</code>, <code>else</code>, <code>while</code>, <code>for</code>, <code>foreach</code> and <code>case</code> <img src="images/should.png" alt="">
 </h2>
 
 <p>Please note that this also avoids possible confusion in statements of the form:</p>
@@ -721,7 +719,7 @@ countries.Add(<span class="pl-s1"><span class="pl-pds">"</span>United States<spa
 }</pre></div>
 
 <h2>
-<a id="always-add-a-default-block-after-the-last-case-in-a-switch-statement-" class="anchor" href="#always-add-a-default-block-after-the-last-case-in-a-switch-statement-" aria-hidden="true"><span class="octicon octicon-link"></span></a>Always add a default block after the last <code>case</code> in a <code>switch</code> statement <img src="imgs/must.png" alt="">
+<a id="always-add-a-default-block-after-the-last-case-in-a-switch-statement-" class="anchor" href="#always-add-a-default-block-after-the-last-case-in-a-switch-statement-" aria-hidden="true"><span class="octicon octicon-link"></span></a>Always add a default block after the last <code>case</code> in a <code>switch</code> statement <img src="images/must.png" alt="">
 </h2>
 
 <p>Add a descriptive comment if the default block is supposed to be empty. Moreover, if that block is not supposed to be reached, throw an <code>InvalidOperationException</code> to detect future changes that may fall through the existing cases. This ensures better code, because all paths the code can travel has been thought about.</p>
@@ -743,7 +741,7 @@ countries.Add(<span class="pl-s1"><span class="pl-pds">"</span>United States<spa
 }</pre></div>
 
 <h2>
-<a id="finish-every-if-else-if-statement-with-an-else-part-" class="anchor" href="#finish-every-if-else-if-statement-with-an-else-part-" aria-hidden="true"><span class="octicon octicon-link"></span></a>Finish every <code>if</code>-<code>else</code>-<code>if</code> statement with an <code>else</code> part <img src="imgs/should.png" alt="">
+<a id="finish-every-if-else-if-statement-with-an-else-part-" class="anchor" href="#finish-every-if-else-if-statement-with-an-else-part-" aria-hidden="true"><span class="octicon octicon-link"></span></a>Finish every <code>if</code>-<code>else</code>-<code>if</code> statement with an <code>else</code> part <img src="images/should.png" alt="">
 </h2>
 
 <p>Similarly to the <code>default</code> block in a <code>switch</code> statement, consider the following way:</p>
@@ -766,13 +764,13 @@ countries.Add(<span class="pl-s1"><span class="pl-pds">"</span>United States<spa
 }</pre></div>
 
 <h2>
-<a id="be-reluctant-with-multiple-return-statements-" class="anchor" href="#be-reluctant-with-multiple-return-statements-" aria-hidden="true"><span class="octicon octicon-link"></span></a>Be reluctant with multiple return statements <img src="imgs/should.png" alt="">
+<a id="be-reluctant-with-multiple-return-statements-" class="anchor" href="#be-reluctant-with-multiple-return-statements-" aria-hidden="true"><span class="octicon octicon-link"></span></a>Be reluctant with multiple return statements <img src="images/should.png" alt="">
 </h2>
 
 <p>One entry, one exit is a sound principle and keeps control flow readable. However, if the method is very small and complies with <a href="Maintainability.Guidelines.md#methods-does-not-exceed-7-statements-">this guideline</a> then multiple return statements may actually improve readability over some central boolean flag that is updated at various points.</p>
 
 <h2>
-<a id="dont-use-if-else-statements-instead-of-a-simple-conditional-assignment-" class="anchor" href="#dont-use-if-else-statements-instead-of-a-simple-conditional-assignment-" aria-hidden="true"><span class="octicon octicon-link"></span></a>Don't use <code>if</code>-<code>else</code> statements instead of a simple (conditional) assignment <img src="imgs/should.png" alt="">
+<a id="dont-use-if-else-statements-instead-of-a-simple-conditional-assignment-" class="anchor" href="#dont-use-if-else-statements-instead-of-a-simple-conditional-assignment-" aria-hidden="true"><span class="octicon octicon-link"></span></a>Don't use <code>if</code>-<code>else</code> statements instead of a simple (conditional) assignment <img src="images/should.png" alt="">
 </h2>
 
 <p>Express your intentions directly. For example:</p>
@@ -809,7 +807,7 @@ countries.Add(<span class="pl-s1"><span class="pl-pds">"</span>United States<spa
 <span class="pl-k">return</span> someString ?? <span class="pl-s1"><span class="pl-pds">"</span>Unavailable<span class="pl-pds">"</span></span>;</pre></div>
 
 <h2>
-<a id="encapsulate-complex-expressions-in-a-method-or-property-" class="anchor" href="#encapsulate-complex-expressions-in-a-method-or-property-" aria-hidden="true"><span class="octicon octicon-link"></span></a>Encapsulate complex expressions in a method or property <img src="imgs/must.png" alt="">
+<a id="encapsulate-complex-expressions-in-a-method-or-property-" class="anchor" href="#encapsulate-complex-expressions-in-a-method-or-property-" aria-hidden="true"><span class="octicon octicon-link"></span></a>Encapsulate complex expressions in a method or property <img src="images/must.png" alt="">
 </h2>
 
 <p>Consider the following example:</p>
@@ -835,7 +833,7 @@ countries.Add(<span class="pl-s1"><span class="pl-pds">"</span>United States<spa
 <p>You still need to understand the expression if you are modifying it, but the calling code is now much easier to grasp.</p>
 
 <h2>
-<a id="call-the-most-overloaded-method-from-other-overloads-" class="anchor" href="#call-the-most-overloaded-method-from-other-overloads-" aria-hidden="true"><span class="octicon octicon-link"></span></a>Call the most overloaded method from other overloads <img src="imgs/should.png" alt="">
+<a id="call-the-most-overloaded-method-from-other-overloads-" class="anchor" href="#call-the-most-overloaded-method-from-other-overloads-" aria-hidden="true"><span class="octicon octicon-link"></span></a>Call the most overloaded method from other overloads <img src="images/should.png" alt="">
 </h2>
 
 <p>This guideline only applies to overloads that are intended for providing optional arguments. Consider for example:</p>
@@ -867,14 +865,14 @@ countries.Add(<span class="pl-s1"><span class="pl-pds">"</span>United States<spa
 
 <p>The class <code>MyString</code> provides three overloads for the <code>IndexOf</code> method, but two of them simply call the one with the most parameters.</p>
 
-<p><img src="imgs/note.png" alt="NOTE"> The same rule can apply to class constructors; implement the most complete overload and call that one from the other overloads using the <code>this()</code> operator.</p>
+<p><img src="images/note.png" alt="NOTE"> The same rule can apply to class constructors; implement the most complete overload and call that one from the other overloads using the <code>this()</code> operator.</p>
 
-<p><img src="imgs/note.png" alt="NOTE"> The parameters with the same name should appear in the same position in all overloads.</p>
+<p><img src="images/note.png" alt="NOTE"> The parameters with the same name should appear in the same position in all overloads.</p>
 
-<p><img src="imgs/important.png" alt="IMPORTANT"> If you also want to allow derived classes to override these methods, define the most complete overload as a <code>protected virtual</code> method that is called by all overloads.</p>
+<p><img src="images/important.png" alt="IMPORTANT"> If you also want to allow derived classes to override these methods, define the most complete overload as a <code>protected virtual</code> method that is called by all overloads.</p>
 
 <h2>
-<a id="only-use-optional-arguments-to-replace-overloads-" class="anchor" href="#only-use-optional-arguments-to-replace-overloads-" aria-hidden="true"><span class="octicon octicon-link"></span></a>Only use optional arguments to replace overloads <img src="imgs/must.png" alt="">
+<a id="only-use-optional-arguments-to-replace-overloads-" class="anchor" href="#only-use-optional-arguments-to-replace-overloads-" aria-hidden="true"><span class="octicon octicon-link"></span></a>Only use optional arguments to replace overloads <img src="images/must.png" alt="">
 </h2>
 
 <p>The only valid reason for using C# 4.0's optional arguments is to replace the example from <a href="Maintainability.Guidelines.md#call-the-most-overloaded-method-from-other-overloads-">this guideline</a> with a single method like:</p>
@@ -886,12 +884,12 @@ countries.Add(<span class="pl-s1"><span class="pl-pds">"</span>United States<spa
 
 <p>If the optional parameter is a reference type then it can only have a default value of <code>null</code>. But since strings, lists and collections should never be <code>null</code> according to <a href="Miscellaneous.Design.Guidelines.md#dont-pass-null-as-the-sender-argument-when-raising-an-event-">this rule</a>, you must use overloaded methods instead.</p>
 
-<p><img src="/imgs/note.png" alt="NOTE"> The default values of the optional parameters are stored at the caller side. As such, changing the default value without recompiling the calling code will not apply the new default value properly.</p>
+<p><img src="/images/note.png" alt="NOTE"> The default values of the optional parameters are stored at the caller side. As such, changing the default value without recompiling the calling code will not apply the new default value properly.</p>
 
-<p><img src="/imgs/note.png" alt="NOTE"> When an interface method defines an optional parameter, its default value is not considered during overload resolution unless you call the concrete class through the interface reference. See <a href="http://blogs.msdn.com/b/ericlippert/archive/2011/05/09/optional-argument-corner-cases-part-one.aspx">this post</a> by Eric Lippert for more details.</p>
+<p><img src="/images/note.png" alt="NOTE"> When an interface method defines an optional parameter, its default value is not considered during overload resolution unless you call the concrete class through the interface reference. See <a href="http://blogs.msdn.com/b/ericlippert/archive/2011/05/09/optional-argument-corner-cases-part-one.aspx">this post</a> by Eric Lippert for more details.</p>
 
 <h2>
-<a id="avoid-using-named-arguments-" class="anchor" href="#avoid-using-named-arguments-" aria-hidden="true"><span class="octicon octicon-link"></span></a>Avoid using named arguments <img src="imgs/must.png" alt="">
+<a id="avoid-using-named-arguments-" class="anchor" href="#avoid-using-named-arguments-" aria-hidden="true"><span class="octicon octicon-link"></span></a>Avoid using named arguments <img src="images/must.png" alt="">
 </h2>
 
 <p>C# 4.0's named arguments have been introduced to make it easier to call COM components that are known for offering tons of optional parameters. If you need named arguments to improve the readability of the call to a method, that method is probably doing too much and should be refactored.</p>
@@ -906,19 +904,19 @@ countries.Add(<span class="pl-s1"><span class="pl-pds">"</span>United States<spa
                 );</pre></div>
 
 <h2>
-<a id="dont-allow-methods-and-constructors-with-more-than-three-parameters-" class="anchor" href="#dont-allow-methods-and-constructors-with-more-than-three-parameters-" aria-hidden="true"><span class="octicon octicon-link"></span></a>Don't allow methods and constructors with more than three parameters <img src="imgs/must.png" alt="">
+<a id="dont-allow-methods-and-constructors-with-more-than-three-parameters-" class="anchor" href="#dont-allow-methods-and-constructors-with-more-than-three-parameters-" aria-hidden="true"><span class="octicon octicon-link"></span></a>Don't allow methods and constructors with more than three parameters <img src="images/must.png" alt="">
 </h2>
 
 <p>If you end up with a method with more than three parameters, use a structure or class for passing multiple arguments such as explained in the <a href="http://en.wikipedia.org/wiki/Specification_pattern">Specification</a> design pattern. In general, the fewer the number of parameters, the easier it is to understand the method. Additionally, unit testing a method with many parameters requires many scenarios to test.</p>
 
 <h2>
-<a id="dont-use-ref-or-out-parameters-" class="anchor" href="#dont-use-ref-or-out-parameters-" aria-hidden="true"><span class="octicon octicon-link"></span></a>Don't use <code>ref</code> or <code>out</code> parameters <img src="imgs/must.png" alt="">
+<a id="dont-use-ref-or-out-parameters-" class="anchor" href="#dont-use-ref-or-out-parameters-" aria-hidden="true"><span class="octicon octicon-link"></span></a>Don't use <code>ref</code> or <code>out</code> parameters <img src="images/must.png" alt="">
 </h2>
 
 <p>They make code less understandable and might cause people to introduce bugs. Prefer returning compound objects instead.</p>
 
 <h2>
-<a id="avoid-methods-that-take-a-bool-flag-" class="anchor" href="#avoid-methods-that-take-a-bool-flag-" aria-hidden="true"><span class="octicon octicon-link"></span></a>Avoid methods that take a <code>bool</code> flag <img src="imgs/should.png" alt="">
+<a id="avoid-methods-that-take-a-bool-flag-" class="anchor" href="#avoid-methods-that-take-a-bool-flag-" aria-hidden="true"><span class="octicon octicon-link"></span></a>Avoid methods that take a <code>bool</code> flag <img src="images/should.png" alt="">
 </h2>
 
 <p>Consider the following method signature:</p>
@@ -932,19 +930,19 @@ countries.Add(<span class="pl-s1"><span class="pl-pds">"</span>United States<spa
 <p>Often, a method taking such a flag is doing more than one thing and needs to be refactored into two or more methods. An alternative solution is to replace the flag with an enumeration. </p>
 
 <h2>
-<a id="dont-use-parameters-as-temporary-variables-" class="anchor" href="#dont-use-parameters-as-temporary-variables-" aria-hidden="true"><span class="octicon octicon-link"></span></a>Don't use parameters as temporary variables <img src="imgs/may.png" alt="">
+<a id="dont-use-parameters-as-temporary-variables-" class="anchor" href="#dont-use-parameters-as-temporary-variables-" aria-hidden="true"><span class="octicon octicon-link"></span></a>Don't use parameters as temporary variables <img src="images/may.png" alt="">
 </h2>
 
 <p>Never use a parameter as a convenient variable for storing temporary state. Even though the type of your temporary variable may be the same, the name usually does not reflect the purpose of the temporary variable.</p>
 
 <h2>
-<a id="always-check-the-result-of-an-as-operation-" class="anchor" href="#always-check-the-result-of-an-as-operation-" aria-hidden="true"><span class="octicon octicon-link"></span></a>Always check the result of an as operation <img src="imgs/must.png" alt="">
+<a id="always-check-the-result-of-an-as-operation-" class="anchor" href="#always-check-the-result-of-an-as-operation-" aria-hidden="true"><span class="octicon octicon-link"></span></a>Always check the result of an as operation <img src="images/must.png" alt="">
 </h2>
 
 <p>If you use as to obtain a certain interface reference from an object, always ensure that this operation does not return <code>null</code>. Failure to do so may cause a <code>NullReferenceException</code> at a much later stage if the object did not implement that interface.</p>
 
 <h2>
-<a id="dont-comment-out-code-" class="anchor" href="#dont-comment-out-code-" aria-hidden="true"><span class="octicon octicon-link"></span></a>Don't comment out code <img src="imgs/must.png" alt="">
+<a id="dont-comment-out-code-" class="anchor" href="#dont-comment-out-code-" aria-hidden="true"><span class="octicon octicon-link"></span></a>Don't comment out code <img src="images/must.png" alt="">
 </h2>
 
 <p>Never check-in code that is commented-out, but instead use a work item tracking system to keep track of some work to be done. Nobody knows what to do when they encounter a block of commented-out code. Was it temporarily disabled for testing purposes? Was it copied as an example? Should I delete it? </p>
@@ -953,7 +951,7 @@ countries.Add(<span class="pl-s1"><span class="pl-pds">"</span>United States<spa
 <a id="naming-guidelines" class="anchor" href="#naming-guidelines" aria-hidden="true"><span class="octicon octicon-link"></span></a>Naming Guidelines</h1>
 
 <h2>
-<a id="use-english-" class="anchor" href="#use-english-" aria-hidden="true"><span class="octicon octicon-link"></span></a>Use English <img src="imgs/must.png" alt="">
+<a id="use-english-" class="anchor" href="#use-english-" aria-hidden="true"><span class="octicon octicon-link"></span></a>Use English <img src="images/must.png" alt="">
 </h2>
 
 <p>All type members, parameters and variables should be named using words from the English language.</p>
@@ -964,12 +962,12 @@ countries.Add(<span class="pl-s1"><span class="pl-pds">"</span>United States<spa
 <li>Avoid using names that conflict with keywords of widely used programming languages.</li>
 </ul>
 
-<p><img src="imgs/exception.png" alt="EXCEPTION"> In most projects, you will use words and phrases from your domain and names specific to your company. Visual Studio's <strong>Static Code Analysis</strong> will perform a spelling check on all code, so you may need to add those terms to a <a href="http://blogs.msdn.com/b/codeanalysis/archive/2007/08/20/new-for-visual-studio-2008-custom-dictionaries.aspx">Custom Code Analysis Dictionary</a>.</p>
+<p><img src="images/exception.png" alt="EXCEPTION"> In most projects, you will use words and phrases from your domain and names specific to your company. Visual Studio's <strong>Static Code Analysis</strong> will perform a spelling check on all code, so you may need to add those terms to a <a href="http://blogs.msdn.com/b/codeanalysis/archive/2007/08/20/new-for-visual-studio-2008-custom-dictionaries.aspx">Custom Code Analysis Dictionary</a>.</p>
 
-<p><img src="imgs/note.png" alt="NOTE"> Doomen's original document clearly stated that <em>Use US-English</em>. In this document, the <em>US</em> part is deliberately omitted.</p>
+<p><img src="images/note.png" alt="NOTE"> Doomen's original document clearly stated that <em>Use US-English</em>. In this document, the <em>US</em> part is deliberately omitted.</p>
 
 <h2>
-<a id="use-proper-casing-for-language-elements-" class="anchor" href="#use-proper-casing-for-language-elements-" aria-hidden="true"><span class="octicon octicon-link"></span></a>Use proper casing for language elements <img src="imgs/must.png" alt="">
+<a id="use-proper-casing-for-language-elements-" class="anchor" href="#use-proper-casing-for-language-elements-" aria-hidden="true"><span class="octicon octicon-link"></span></a>Use proper casing for language elements <img src="images/must.png" alt="">
 </h2>
 
 <table>
@@ -1065,27 +1063,27 @@ countries.Add(<span class="pl-s1"><span class="pl-pds">"</span>United States<spa
 </table>
 
 <h2>
-<a id="dont-include-numbers-in-variables-parameters-and-type-members-" class="anchor" href="#dont-include-numbers-in-variables-parameters-and-type-members-" aria-hidden="true"><span class="octicon octicon-link"></span></a>Don't include numbers in variables, parameters and type members <img src="imgs/may.png" alt="">
+<a id="dont-include-numbers-in-variables-parameters-and-type-members-" class="anchor" href="#dont-include-numbers-in-variables-parameters-and-type-members-" aria-hidden="true"><span class="octicon octicon-link"></span></a>Don't include numbers in variables, parameters and type members <img src="images/may.png" alt="">
 </h2>
 
 <p>In most cases they are a lazy excuse for not defining a clear and intention-revealing name.</p>
 
 <h2>
-<a id="dont-prefix-fields-" class="anchor" href="#dont-prefix-fields-" aria-hidden="true"><span class="octicon octicon-link"></span></a>Don't prefix fields <img src="imgs/must.png" alt="">
+<a id="dont-prefix-fields-" class="anchor" href="#dont-prefix-fields-" aria-hidden="true"><span class="octicon octicon-link"></span></a>Don't prefix fields <img src="images/must.png" alt="">
 </h2>
 
 <p>For example, don't use <code>g_</code> or <code>s_</code> to distinguish static versus non-static fields. In general, a method in which it is difficult to distinguish local variables from member fields is too big. Examples of incorrect identifier names are: <code>_currentUser</code>, <code>mUserName</code>, <code>m_loginTime</code>.</p>
 
 <h2>
-<a id="dont-use-abbreviations-" class="anchor" href="#dont-use-abbreviations-" aria-hidden="true"><span class="octicon octicon-link"></span></a>Don't use abbreviations <img src="imgs/should.png" alt="">
+<a id="dont-use-abbreviations-" class="anchor" href="#dont-use-abbreviations-" aria-hidden="true"><span class="octicon octicon-link"></span></a>Don't use abbreviations <img src="images/should.png" alt="">
 </h2>
 
 <p>For example, use <code>OnButtonClick</code> rather than <code>OnBtnClick</code>. Avoid single character variable names, such as <code>i</code> or <code>q</code>. Use <code>index</code> or <code>query</code> instead.</p>
 
-<p><img src="imgs/exception.png" alt="EXCEPTION"> Use well-known abbreviations that are widely accepted or well-known within the domain you work. For instance, use <code>UI</code> instead of <code>UserInterface</code>. </p>
+<p><img src="images/exception.png" alt="EXCEPTION"> Use well-known abbreviations that are widely accepted or well-known within the domain you work. For instance, use <code>UI</code> instead of <code>UserInterface</code>. </p>
 
 <h2>
-<a id="name-a-member-parameter-or-variable-according-its-meaning-and-not-its-type-" class="anchor" href="#name-a-member-parameter-or-variable-according-its-meaning-and-not-its-type-" aria-hidden="true"><span class="octicon octicon-link"></span></a>Name a member, parameter or variable according its meaning and not its type <img src="imgs/should.png" alt="">
+<a id="name-a-member-parameter-or-variable-according-its-meaning-and-not-its-type-" class="anchor" href="#name-a-member-parameter-or-variable-according-its-meaning-and-not-its-type-" aria-hidden="true"><span class="octicon octicon-link"></span></a>Name a member, parameter or variable according its meaning and not its type <img src="images/should.png" alt="">
 </h2>
 
 <ul>
@@ -1095,7 +1093,7 @@ countries.Add(<span class="pl-s1"><span class="pl-pds">"</span>United States<spa
 </ul>
 
 <h2>
-<a id="name-types-using-nouns-noun-phrases-or-adjective-phrases-" class="anchor" href="#name-types-using-nouns-noun-phrases-or-adjective-phrases-" aria-hidden="true"><span class="octicon octicon-link"></span></a>Name types using nouns, noun phrases or adjective phrases <img src="imgs/should.png" alt="">
+<a id="name-types-using-nouns-noun-phrases-or-adjective-phrases-" class="anchor" href="#name-types-using-nouns-noun-phrases-or-adjective-phrases-" aria-hidden="true"><span class="octicon octicon-link"></span></a>Name types using nouns, noun phrases or adjective phrases <img src="images/should.png" alt="">
 </h2>
 
 <p>Bad examples include <code>SearchExamination</code> (a page for searching for examinations), <code>Common</code> (does not end with a noun, and does not explain its purpose) and <code>SiteSecurity</code> (although the name is technically okay, it does not say anything about its purpose). Good examples include <code>BusinessBinder</code>, <code>SmartTextBox</code>, or <code>EditableSingleCustomer</code>.</p>
@@ -1103,7 +1101,7 @@ countries.Add(<span class="pl-s1"><span class="pl-pds">"</span>United States<spa
 <p>Don't include terms like <code>Utility</code> or <code>Helper</code> in classes. Classes with a name like that are usually static classes and are introduced without considering the object-oriented principles (See <a href="Class.Design.Guidelines.md#avoid-static-classes-">Avoid static classes</a>).</p>
 
 <h2>
-<a id="name-generic-type-parameters-with-descriptive-names-" class="anchor" href="#name-generic-type-parameters-with-descriptive-names-" aria-hidden="true"><span class="octicon octicon-link"></span></a>Name generic type parameters with descriptive names <img src="imgs/should.png" alt="">
+<a id="name-generic-type-parameters-with-descriptive-names-" class="anchor" href="#name-generic-type-parameters-with-descriptive-names-" aria-hidden="true"><span class="octicon octicon-link"></span></a>Name generic type parameters with descriptive names <img src="images/should.png" alt="">
 </h2>
 
 <ul>
@@ -1113,7 +1111,7 @@ countries.Add(<span class="pl-s1"><span class="pl-pds">"</span>United States<spa
 </ul>
 
 <h2>
-<a id="dont-repeat-the-name-of-a-class-or-enumeration-in-its-members-" class="anchor" href="#dont-repeat-the-name-of-a-class-or-enumeration-in-its-members-" aria-hidden="true"><span class="octicon octicon-link"></span></a>Don't repeat the name of a class or enumeration in its members <img src="imgs/must.png" alt="">
+<a id="dont-repeat-the-name-of-a-class-or-enumeration-in-its-members-" class="anchor" href="#dont-repeat-the-name-of-a-class-or-enumeration-in-its-members-" aria-hidden="true"><span class="octicon octicon-link"></span></a>Don't repeat the name of a class or enumeration in its members <img src="images/must.png" alt="">
 </h2>
 
 <div class="highlight highlight-c#"><pre><span class="pl-s">class</span> <span class="pl-en">Employee</span>
@@ -1132,13 +1130,13 @@ countries.Add(<span class="pl-s1"><span class="pl-pds">"</span>United States<spa
 }</pre></div>
 
 <h2>
-<a id="name-members-similarly-to-members-of-related-net-framework-classes-" class="anchor" href="#name-members-similarly-to-members-of-related-net-framework-classes-" aria-hidden="true"><span class="octicon octicon-link"></span></a>Name members similarly to members of related .NET Framework classes <img src="imgs/may.png" alt="">
+<a id="name-members-similarly-to-members-of-related-net-framework-classes-" class="anchor" href="#name-members-similarly-to-members-of-related-net-framework-classes-" aria-hidden="true"><span class="octicon octicon-link"></span></a>Name members similarly to members of related .NET Framework classes <img src="images/may.png" alt="">
 </h2>
 
 <p>.NET developers are already accustomed to the naming patterns the framework uses, so following this same pattern helps them find their way in your classes as well. For instance, if you define a class that behaves like a collection, provide members like <code>Add</code>, <code>Remove</code> and <code>Count</code> instead of <code>AddItem</code>, <code>Delete</code> or <code>NumberOfItems</code>.</p>
 
 <h2>
-<a id="avoid-short-names-or-names-that-can-be-mistaken-with-other-names-" class="anchor" href="#avoid-short-names-or-names-that-can-be-mistaken-with-other-names-" aria-hidden="true"><span class="octicon octicon-link"></span></a>Avoid short names or names that can be mistaken with other names <img src="imgs/must.png" alt="">
+<a id="avoid-short-names-or-names-that-can-be-mistaken-with-other-names-" class="anchor" href="#avoid-short-names-or-names-that-can-be-mistaken-with-other-names-" aria-hidden="true"><span class="octicon octicon-link"></span></a>Avoid short names or names that can be mistaken with other names <img src="images/must.png" alt="">
 </h2>
 
 <p>Although technically correct, the following statement can be quite confusing.</p>
@@ -1146,7 +1144,7 @@ countries.Add(<span class="pl-s1"><span class="pl-pds">"</span>United States<spa
 <div class="highlight highlight-c#"><pre><span class="pl-st">bool</span> b001 = (lo == l0) ? (I1 == <span class="pl-c1">11</span>) : (lOl != <span class="pl-c1">101</span>);</pre></div>
 
 <h2>
-<a id="properly-name-properties-" class="anchor" href="#properly-name-properties-" aria-hidden="true"><span class="octicon octicon-link"></span></a>Properly name properties <img src="imgs/should.png" alt="">
+<a id="properly-name-properties-" class="anchor" href="#properly-name-properties-" aria-hidden="true"><span class="octicon octicon-link"></span></a>Properly name properties <img src="images/should.png" alt="">
 </h2>
 
 <ul>
@@ -1157,13 +1155,13 @@ countries.Add(<span class="pl-s1"><span class="pl-pds">"</span>United States<spa
 </ul>
 
 <h2>
-<a id="name-methods-using-verb-object-pair-" class="anchor" href="#name-methods-using-verb-object-pair-" aria-hidden="true"><span class="octicon octicon-link"></span></a>Name methods using verb-object pair <img src="imgs/should.png" alt="">
+<a id="name-methods-using-verb-object-pair-" class="anchor" href="#name-methods-using-verb-object-pair-" aria-hidden="true"><span class="octicon octicon-link"></span></a>Name methods using verb-object pair <img src="images/should.png" alt="">
 </h2>
 
 <p>Name methods using a verb-object pair such as <code>ShowDialog</code>. A good name should give the member a hint on the <em>what</em>, and if possible, the <em>why</em>. Also, don't include <code>And</code> in the name of the method. It implies that the method is doing more than one thing, which violates the single responsibility principle explained in <a href="Member.Design.Guidelines.md#a-method-or-property-does-only-one-thing-">here</a>.</p>
 
 <h2>
-<a id="name-namespaces-using-names-layers-verbs-and-features-" class="anchor" href="#name-namespaces-using-names-layers-verbs-and-features-" aria-hidden="true"><span class="octicon octicon-link"></span></a>Name namespaces using names, layers, verbs and features <img src="imgs/may.png" alt="">
+<a id="name-namespaces-using-names-layers-verbs-and-features-" class="anchor" href="#name-namespaces-using-names-layers-verbs-and-features-" aria-hidden="true"><span class="octicon octicon-link"></span></a>Name namespaces using names, layers, verbs and features <img src="images/may.png" alt="">
 </h2>
 
 <p>For instance, the following namespaces are good examples of that guideline.</p>
@@ -1176,10 +1174,10 @@ countries.Add(<span class="pl-s1"><span class="pl-pds">"</span>United States<spa
 <li><code>CaliburnMicro.Extensions</code></li>
 </ul>
 
-<p><img src="imgs/note.png" alt="NOTE"> Never allow namespaces to contain the name of a type, but a noun in its plural form, eg) <code>Collections</code>, is usually okay.</p>
+<p><img src="images/note.png" alt="NOTE"> Never allow namespaces to contain the name of a type, but a noun in its plural form, eg) <code>Collections</code>, is usually okay.</p>
 
 <h2>
-<a id="use-a-verb-or-verb-phrase-to-name-an-event-" class="anchor" href="#use-a-verb-or-verb-phrase-to-name-an-event-" aria-hidden="true"><span class="octicon octicon-link"></span></a>Use a verb or verb phrase to name an event <img src="imgs/should.png" alt="">
+<a id="use-a-verb-or-verb-phrase-to-name-an-event-" class="anchor" href="#use-a-verb-or-verb-phrase-to-name-an-event-" aria-hidden="true"><span class="octicon octicon-link"></span></a>Use a verb or verb phrase to name an event <img src="images/should.png" alt="">
 </h2>
 
 <p>Name events with a verb or a verb phrase. For example: <code>Click</code>, <code>Deleted</code>, <code>Closing</code>, <code>Minimizing</code>, and <code>Arriving</code>. For example, the declaration of the Search event may look like this:</p>
@@ -1187,7 +1185,7 @@ countries.Add(<span class="pl-s1"><span class="pl-pds">"</span>United States<spa
 <div class="highlight highlight-c#"><pre><span class="pl-s">public</span> <span class="pl-s">event</span> EventHandler&lt;SearchArgs&gt; Search;</pre></div>
 
 <h2>
-<a id="use--ing-and--ed-to-express-pre-events-and-post-events-" class="anchor" href="#use--ing-and--ed-to-express-pre-events-and-post-events-" aria-hidden="true"><span class="octicon octicon-link"></span></a>Use <code>-ing</code> and <code>-ed</code> to express pre-events and post-events <img src="imgs/may.png" alt="">
+<a id="use--ing-and--ed-to-express-pre-events-and-post-events-" class="anchor" href="#use--ing-and--ed-to-express-pre-events-and-post-events-" aria-hidden="true"><span class="octicon octicon-link"></span></a>Use <code>-ing</code> and <code>-ed</code> to express pre-events and post-events <img src="images/may.png" alt="">
 </h2>
 
 <p>For example, a close event that is raised before a window is closed would be called <code>Closing</code> and one that is raised after the window is closed would be called <code>Closed</code>. Don't use <code>Before</code> or <code>After</code> prefixes or suffixes to indicate pre and post events.</p>
@@ -1204,13 +1202,13 @@ countries.Add(<span class="pl-s1"><span class="pl-pds">"</span>United States<spa
 </ul>
 
 <h2>
-<a id="prefix-an-event-handler-with-on-" class="anchor" href="#prefix-an-event-handler-with-on-" aria-hidden="true"><span class="octicon octicon-link"></span></a>Prefix an event handler with On <img src="imgs/may.png" alt="">
+<a id="prefix-an-event-handler-with-on-" class="anchor" href="#prefix-an-event-handler-with-on-" aria-hidden="true"><span class="octicon octicon-link"></span></a>Prefix an event handler with On <img src="images/may.png" alt="">
 </h2>
 
 <p>It is good practice to prefix the method that handles an event with <code>On</code>. For example, a method that handles the <code>Closing</code> event could be named <code>OnClosing</code>.</p>
 
 <h2>
-<a id="use-an-underscore-for-irrelevant-lambda-parameters-" class="anchor" href="#use-an-underscore-for-irrelevant-lambda-parameters-" aria-hidden="true"><span class="octicon octicon-link"></span></a>Use an underscore for irrelevant lambda parameters <img src="imgs/may.png" alt="">
+<a id="use-an-underscore-for-irrelevant-lambda-parameters-" class="anchor" href="#use-an-underscore-for-irrelevant-lambda-parameters-" aria-hidden="true"><span class="octicon octicon-link"></span></a>Use an underscore for irrelevant lambda parameters <img src="images/may.png" alt="">
 </h2>
 
 <p>If you use a lambda statement, for instance, to subscribe to an event, and the actual parameters of the event are irrelevant, use the following convention to make that more explicit.</p>
@@ -1218,13 +1216,13 @@ countries.Add(<span class="pl-s1"><span class="pl-pds">"</span>United States<spa
 <div class="highlight highlight-c#"><pre>button.Click += (_, __) =&gt; HandleClick();</pre></div>
 
 <h2>
-<a id="group-extension-methods-in-a-class-suffixed-with-extensions-" class="anchor" href="#group-extension-methods-in-a-class-suffixed-with-extensions-" aria-hidden="true"><span class="octicon octicon-link"></span></a>Group extension methods in a class suffixed with Extensions <img src="imgs/may.png" alt="">
+<a id="group-extension-methods-in-a-class-suffixed-with-extensions-" class="anchor" href="#group-extension-methods-in-a-class-suffixed-with-extensions-" aria-hidden="true"><span class="octicon octicon-link"></span></a>Group extension methods in a class suffixed with Extensions <img src="images/may.png" alt="">
 </h2>
 
 <p>If the name of an extension method conflicts with another member or extension method, you must prefix the call with the class name. Having them in a dedicated class with the <code>Extensions</code> suffix improves readability.</p>
 
 <h2>
-<a id="postfix-asynchronous-methods-with-async-of-taskasync-" class="anchor" href="#postfix-asynchronous-methods-with-async-of-taskasync-" aria-hidden="true"><span class="octicon octicon-link"></span></a>Postfix asynchronous methods with <code>Async</code> of <code>TaskAsync</code> <img src="imgs/should.png" alt="">
+<a id="postfix-asynchronous-methods-with-async-of-taskasync-" class="anchor" href="#postfix-asynchronous-methods-with-async-of-taskasync-" aria-hidden="true"><span class="octicon octicon-link"></span></a>Postfix asynchronous methods with <code>Async</code> of <code>TaskAsync</code> <img src="images/should.png" alt="">
 </h2>
 
 <p>The general convention for methods that return <code>Task</code> or <code>Task&lt;TResult&gt;</code> is to post-fix them with <code>Async</code>, but if such a method already exist, use <code>TaskAsync</code> instead.</p>
@@ -1233,12 +1231,12 @@ countries.Add(<span class="pl-s1"><span class="pl-pds">"</span>United States<spa
 <a id="performance-guidelines" class="anchor" href="#performance-guidelines" aria-hidden="true"><span class="octicon octicon-link"></span></a>Performance Guidelines</h1>
 
 <h2>
-<a id="consider-using-any-to-determine-whether-an-ienumerablet-is-empty-" class="anchor" href="#consider-using-any-to-determine-whether-an-ienumerablet-is-empty-" aria-hidden="true"><span class="octicon octicon-link"></span></a>Consider using <code>Any()</code> to determine whether an <code>IEnumerable&lt;T&gt;</code> is empty <img src="imgs/may.png" alt="">
+<a id="consider-using-any-to-determine-whether-an-ienumerablet-is-empty-" class="anchor" href="#consider-using-any-to-determine-whether-an-ienumerablet-is-empty-" aria-hidden="true"><span class="octicon octicon-link"></span></a>Consider using <code>Any()</code> to determine whether an <code>IEnumerable&lt;T&gt;</code> is empty <img src="images/may.png" alt="">
 </h2>
 
 <p>When a method or other member returns an <code>IEnumerable&lt;T&gt;</code> or other collection class that does not expose a <code>Count</code> property, use the <code>Any()</code> extension method rather than <code>Count()</code> to determine whether the collection contains items. If you do use <code>Count()</code>, you risk that iterating over the entire collection might have a significant impact (such as when it really is an <code>IQueryable&lt;T&gt;</code> to a persistent store).</p>
 
-<p><img src="imgs/note.png" alt="NOTE"> If you return an <code>IEnumerable&lt;T&gt;</code> to prevent editing from outside the owner as explained in <a href="Member.Design.Guidelines.md#return-an-ienumerablet-or-icollectiont-instead-of-a-concrete-collection-class-">here</a> and you're developing in .NET 4.5+, consider the new read-only classes. </p>
+<p><img src="images/note.png" alt="NOTE"> If you return an <code>IEnumerable&lt;T&gt;</code> to prevent editing from outside the owner as explained in <a href="Member.Design.Guidelines.md#return-an-ienumerablet-or-icollectiont-instead-of-a-concrete-collection-class-">here</a> and you're developing in .NET 4.5+, consider the new read-only classes. </p>
 
 <h2>
 <a id="only-use-async-for-low-intensive-long-running-activities" class="anchor" href="#only-use-async-for-low-intensive-long-running-activities" aria-hidden="true"><span class="octicon octicon-link"></span></a>Only use async for low-intensive long-running activities</h2>
@@ -1282,15 +1280,15 @@ countries.Add(<span class="pl-s1"><span class="pl-pds">"</span>United States<spa
 <a id="framework-guidelines" class="anchor" href="#framework-guidelines" aria-hidden="true"><span class="octicon octicon-link"></span></a>Framework Guidelines</h1>
 
 <h2>
-<a id="use-c-type-aliases-instead-of-the-types-from-the-system-namespace-" class="anchor" href="#use-c-type-aliases-instead-of-the-types-from-the-system-namespace-" aria-hidden="true"><span class="octicon octicon-link"></span></a>Use C# type aliases instead of the types from the <code>System</code> namespace <img src="imgs/must.png" alt="">
+<a id="use-c-type-aliases-instead-of-the-types-from-the-system-namespace-" class="anchor" href="#use-c-type-aliases-instead-of-the-types-from-the-system-namespace-" aria-hidden="true"><span class="octicon octicon-link"></span></a>Use C# type aliases instead of the types from the <code>System</code> namespace <img src="images/must.png" alt="">
 </h2>
 
 <p>For instance, use <code>object</code> instead of <code>Object</code>, <code>string</code> instead of <code>String</code>, and <code>int</code> instead of <code>Int32</code>. These aliases have been introduced to make the primitive types a first class citizen of the C# language so use them accordingly.</p>
 
-<p><img src="imgs/exception.png" alt="EXCEPTION"> When referring to static members of those types, it is custom to use the full CLS name, eg) <code>Int32.Parse()</code> instead of <code>int.Parse()</code>.</p>
+<p><img src="images/exception.png" alt="EXCEPTION"> When referring to static members of those types, it is custom to use the full CLS name, eg) <code>Int32.Parse()</code> instead of <code>int.Parse()</code>.</p>
 
 <h2>
-<a id="properly-name-properties-variables-or-fields-referring-to-localised-resources-" class="anchor" href="#properly-name-properties-variables-or-fields-referring-to-localised-resources-" aria-hidden="true"><span class="octicon octicon-link"></span></a>Properly name properties, variables or fields referring to localised resources <img src="imgs/may.png" alt="">
+<a id="properly-name-properties-variables-or-fields-referring-to-localised-resources-" class="anchor" href="#properly-name-properties-variables-or-fields-referring-to-localised-resources-" aria-hidden="true"><span class="octicon octicon-link"></span></a>Properly name properties, variables or fields referring to localised resources <img src="images/may.png" alt="">
 </h2>
 
 <p>The guidelines in this topic apply to localisable resources such as error messages and menu text.</p>
@@ -1302,25 +1300,25 @@ countries.Add(<span class="pl-s1"><span class="pl-pds">"</span>United States<spa
 </ul>
 
 <h2>
-<a id="dont-hardcode-strings-that-change-based-on-the-deployment-" class="anchor" href="#dont-hardcode-strings-that-change-based-on-the-deployment-" aria-hidden="true"><span class="octicon octicon-link"></span></a>Don't hardcode strings that change based on the deployment <img src="imgs/may.png" alt="">
+<a id="dont-hardcode-strings-that-change-based-on-the-deployment-" class="anchor" href="#dont-hardcode-strings-that-change-based-on-the-deployment-" aria-hidden="true"><span class="octicon octicon-link"></span></a>Don't hardcode strings that change based on the deployment <img src="images/may.png" alt="">
 </h2>
 
 <p>Examples include connection strings, server addresses, etc. Use <code>Resources</code>, the <code>ConnectionStrings</code> property of the <code>ConfigurationManager</code> class, or the <code>Settings</code> class generated by Visual Studio. Maintain the actual values into the <code>app.config</code> or <code>web.config</code> (and most definitely not in a custom configuration store). </p>
 
 <h2>
-<a id="build-with-the-highest-warning-level-" class="anchor" href="#build-with-the-highest-warning-level-" aria-hidden="true"><span class="octicon octicon-link"></span></a>Build with the highest warning level <img src="imgs/must.png" alt="">
+<a id="build-with-the-highest-warning-level-" class="anchor" href="#build-with-the-highest-warning-level-" aria-hidden="true"><span class="octicon octicon-link"></span></a>Build with the highest warning level <img src="images/must.png" alt="">
 </h2>
 
 <p>Configure the development environment to use <strong>Warning Level 4</strong> for the C# compiler, and enable the option <strong>Treat warnings as errors</strong>. This allows the compiler to enforce the highest possible code quality. </p>
 
 <h2>
-<a id="properly-fill-the-attributes-of-the-assemblyinfocs-file-" class="anchor" href="#properly-fill-the-attributes-of-the-assemblyinfocs-file-" aria-hidden="true"><span class="octicon octicon-link"></span></a>Properly fill the attributes of the <code>AssemblyInfo.cs</code> file <img src="imgs/may.png" alt="">
+<a id="properly-fill-the-attributes-of-the-assemblyinfocs-file-" class="anchor" href="#properly-fill-the-attributes-of-the-assemblyinfocs-file-" aria-hidden="true"><span class="octicon octicon-link"></span></a>Properly fill the attributes of the <code>AssemblyInfo.cs</code> file <img src="images/may.png" alt="">
 </h2>
 
 <p>Ensure that the attributes for the company name, description, copyright statement, version, etc. are filled. One way to ensure that version and other fields that are common to all assemblies have the same values, is to move the corresponding attributes out of the <code>AssemblyInfo.cs</code> into a <code>SolutionInfo.cs</code> file that is shared by all projects within the solution.  </p>
 
 <h2>
-<a id="avoid-linq-for-simple-expressions-" class="anchor" href="#avoid-linq-for-simple-expressions-" aria-hidden="true"><span class="octicon octicon-link"></span></a>Avoid LINQ for simple expressions <img src="imgs/may.png" alt="">
+<a id="avoid-linq-for-simple-expressions-" class="anchor" href="#avoid-linq-for-simple-expressions-" aria-hidden="true"><span class="octicon octicon-link"></span></a>Avoid LINQ for simple expressions <img src="images/may.png" alt="">
 </h2>
 
 <p>Rather than</p>
@@ -1334,7 +1332,7 @@ countries.Add(<span class="pl-s1"><span class="pl-pds">"</span>United States<spa
 <p>Since LINQ queries should be written out over multiple lines for readability, the second example is a bit more readable.</p>
 
 <h2>
-<a id="use-lambda-expressions-instead-of-delegates-" class="anchor" href="#use-lambda-expressions-instead-of-delegates-" aria-hidden="true"><span class="octicon octicon-link"></span></a>Use Lambda expressions instead of delegates <img src="imgs/should.png" alt="">
+<a id="use-lambda-expressions-instead-of-delegates-" class="anchor" href="#use-lambda-expressions-instead-of-delegates-" aria-hidden="true"><span class="octicon octicon-link"></span></a>Use Lambda expressions instead of delegates <img src="images/should.png" alt="">
 </h2>
 
 <p>Lambda expressions provide a much more elegant alternative for anonymous delegates. So instead of</p>
@@ -1353,7 +1351,7 @@ countries.Add(<span class="pl-s1"><span class="pl-pds">"</span>United States<spa
 <div class="highlight highlight-c#"><pre><span class="pl-k">var</span> customer = customers.Where(c =&gt; c.Name == <span class="pl-s1"><span class="pl-pds">"</span>Tom<span class="pl-pds">"</span></span>);</pre></div>
 
 <h2>
-<a id="only-use-the-dynamic-keyword-when-talking-to-a-dynamic-object-" class="anchor" href="#only-use-the-dynamic-keyword-when-talking-to-a-dynamic-object-" aria-hidden="true"><span class="octicon octicon-link"></span></a>Only use the dynamic keyword when talking to a dynamic object <img src="imgs/must.png" alt="">
+<a id="only-use-the-dynamic-keyword-when-talking-to-a-dynamic-object-" class="anchor" href="#only-use-the-dynamic-keyword-when-talking-to-a-dynamic-object-" aria-hidden="true"><span class="octicon octicon-link"></span></a>Only use the dynamic keyword when talking to a dynamic object <img src="images/must.png" alt="">
 </h2>
 
 <p>The dynamic keyword has been introduced for working with dynamic languages. Using it introduces a serious performance bottleneck because the compiler has to generate some complex Reflection code.</p>
@@ -1384,47 +1382,47 @@ countries.Add(<span class="pl-s1"><span class="pl-pds">"</span>United States<spa
 <a id="documentation-guidelines" class="anchor" href="#documentation-guidelines" aria-hidden="true"><span class="octicon octicon-link"></span></a>Documentation Guidelines</h1>
 
 <h2>
-<a id="write-comments-and-documentation-in-english-" class="anchor" href="#write-comments-and-documentation-in-english-" aria-hidden="true"><span class="octicon octicon-link"></span></a>Write comments and documentation in English <img src="imgs/must.png" alt="">
+<a id="write-comments-and-documentation-in-english-" class="anchor" href="#write-comments-and-documentation-in-english-" aria-hidden="true"><span class="octicon octicon-link"></span></a>Write comments and documentation in English <img src="images/must.png" alt="">
 </h2>
 
 <p>Documents must be written in English (see <a href="Naming.Guidelines.md#use-english-">here</a>).</p>
 
-<p><img src="imgs/note.png" alt="NOTE"> Doomen's original document clearly stated that <em>Use US-English</em>. In this document, the <em>US</em> part is deliberately omitted.</p>
+<p><img src="images/note.png" alt="NOTE"> Doomen's original document clearly stated that <em>Use US-English</em>. In this document, the <em>US</em> part is deliberately omitted.</p>
 
 <h2>
-<a id="document-all-public-protected-and-internal-types-and-members-" class="anchor" href="#document-all-public-protected-and-internal-types-and-members-" aria-hidden="true"><span class="octicon octicon-link"></span></a>Document all public, protected and internal types and members <img src="imgs/should.png" alt="">
+<a id="document-all-public-protected-and-internal-types-and-members-" class="anchor" href="#document-all-public-protected-and-internal-types-and-members-" aria-hidden="true"><span class="octicon octicon-link"></span></a>Document all public, protected and internal types and members <img src="images/should.png" alt="">
 </h2>
 
 <p>Documenting your code allows Visual Studio to pop-up the documentation when your class is used somewhere else. Furthermore, by properly documenting your classes, tools can generate professionally looking class documentation.</p>
 
 <h2>
-<a id="write-xml-documentation-with-another-developer-in-mind-" class="anchor" href="#write-xml-documentation-with-another-developer-in-mind-" aria-hidden="true"><span class="octicon octicon-link"></span></a>Write XML documentation with another developer in mind <img src="imgs/should.png" alt="">
+<a id="write-xml-documentation-with-another-developer-in-mind-" class="anchor" href="#write-xml-documentation-with-another-developer-in-mind-" aria-hidden="true"><span class="octicon octicon-link"></span></a>Write XML documentation with another developer in mind <img src="images/should.png" alt="">
 </h2>
 
 <p>Write the documentation of your type with another developer in mind. Assume he or she will not have access to the source code and try to explain how to get the most out of the functionality of your type.</p>
 
 <h2>
-<a id="write-msdn-style-documentation-" class="anchor" href="#write-msdn-style-documentation-" aria-hidden="true"><span class="octicon octicon-link"></span></a>Write MSDN-style documentation <img src="imgs/may.png" alt="">
+<a id="write-msdn-style-documentation-" class="anchor" href="#write-msdn-style-documentation-" aria-hidden="true"><span class="octicon octicon-link"></span></a>Write MSDN-style documentation <img src="images/may.png" alt="">
 </h2>
 
 <p>Following the MSDN on-line help style and word choice helps the developer to find its way through your documentation more easily.</p>
 
-<p><img src="imgs/note.png" alt="NOTE"> Either <a href="http://submain.com/products/ghostdoc.aspx">GhostDoc</a> or <a href="https://shfb.codeplex.com">Sandcastle Help File Builder</a> can generate a starting point for documenting code with a shortcut key.</p>
+<p><img src="images/note.png" alt="NOTE"> Either <a href="http://submain.com/products/ghostdoc.aspx">GhostDoc</a> or <a href="https://shfb.codeplex.com">Sandcastle Help File Builder</a> can generate a starting point for documenting code with a shortcut key.</p>
 
 <h2>
-<a id="avoid-inline-comments-" class="anchor" href="#avoid-inline-comments-" aria-hidden="true"><span class="octicon octicon-link"></span></a>Avoid inline comments <img src="imgs/should.png" alt="">
+<a id="avoid-inline-comments-" class="anchor" href="#avoid-inline-comments-" aria-hidden="true"><span class="octicon octicon-link"></span></a>Avoid inline comments <img src="images/should.png" alt="">
 </h2>
 
 <p>If you feel the need to explain a block of code using a comment, consider replacing that block with a method having a clear name.</p>
 
 <h2>
-<a id="only-write-comments-to-explain-complex-algorithms-or-decisions-" class="anchor" href="#only-write-comments-to-explain-complex-algorithms-or-decisions-" aria-hidden="true"><span class="octicon octicon-link"></span></a>Only write comments to explain complex algorithms or decisions <img src="imgs/must.png" alt="">
+<a id="only-write-comments-to-explain-complex-algorithms-or-decisions-" class="anchor" href="#only-write-comments-to-explain-complex-algorithms-or-decisions-" aria-hidden="true"><span class="octicon octicon-link"></span></a>Only write comments to explain complex algorithms or decisions <img src="images/must.png" alt="">
 </h2>
 
 <p>Try to focus comments on the why and what of a code block and not the how. Avoid explaining the statements in words, but instead help the reader understand why you chose a certain solution or algorithm and what you are trying to achieve. If applicable, also mention that you chose an alternative solution because you ran into a problem with the obvious solution.</p>
 
 <h2>
-<a id="dont-use-comments-for-tracking-work-to-be-done-later-" class="anchor" href="#dont-use-comments-for-tracking-work-to-be-done-later-" aria-hidden="true"><span class="octicon octicon-link"></span></a>Don't use comments for tracking work to be done later <img src="imgs/may.png" alt="">
+<a id="dont-use-comments-for-tracking-work-to-be-done-later-" class="anchor" href="#dont-use-comments-for-tracking-work-to-be-done-later-" aria-hidden="true"><span class="octicon octicon-link"></span></a>Don't use comments for tracking work to be done later <img src="images/may.png" alt="">
 </h2>
 
 <p>Annotating a block of code or some work to be done using a TODO or similar comment may seem a reasonable way of tracking work-to-be-done. But in reality, nobody really searches for comments like that. Use a work item tracking system such as Team Foundation Server to keep track of left overs.</p>
@@ -1433,7 +1431,7 @@ countries.Add(<span class="pl-s1"><span class="pl-pds">"</span>United States<spa
 <a id="layout-guidelines" class="anchor" href="#layout-guidelines" aria-hidden="true"><span class="octicon octicon-link"></span></a>Layout Guidelines</h1>
 
 <h2>
-<a id="use-a-common-layout-" class="anchor" href="#use-a-common-layout-" aria-hidden="true"><span class="octicon octicon-link"></span></a>Use a common layout <img src="imgs/must.png" alt="">
+<a id="use-a-common-layout-" class="anchor" href="#use-a-common-layout-" aria-hidden="true"><span class="octicon octicon-link"></span></a>Use a common layout <img src="images/must.png" alt="">
 </h2>
 
 <ul>
@@ -1492,7 +1490,7 @@ countries.Add(<span class="pl-s1"><span class="pl-pds">"</span>United States<spa
 </ul>
 
 <h2>
-<a id="order-and-group-namespaces-according-the-company-" class="anchor" href="#order-and-group-namespaces-according-the-company-" aria-hidden="true"><span class="octicon octicon-link"></span></a>Order and group namespaces according the company <img src="imgs/may.png" alt="">
+<a id="order-and-group-namespaces-according-the-company-" class="anchor" href="#order-and-group-namespaces-according-the-company-" aria-hidden="true"><span class="octicon octicon-link"></span></a>Order and group namespaces according the company <img src="images/may.png" alt="">
 </h2>
 
 <div class="highlight highlight-c#"><pre><span class="pl-c">// Microsoft namespaces are first</span>
@@ -1508,7 +1506,7 @@ countries.Add(<span class="pl-s1"><span class="pl-pds">"</span>United States<spa
 <span class="pl-k">using</span> Telerik.Ajax;</pre></div>
 
 <h2>
-<a id="place-members-in-a-well-defined-order-" class="anchor" href="#place-members-in-a-well-defined-order-" aria-hidden="true"><span class="octicon octicon-link"></span></a>Place members in a well-defined order <img src="imgs/must.png" alt="">
+<a id="place-members-in-a-well-defined-order-" class="anchor" href="#place-members-in-a-well-defined-order-" aria-hidden="true"><span class="octicon octicon-link"></span></a>Place members in a well-defined order <img src="images/must.png" alt="">
 </h2>
 
 <p>Maintaining a common order allows other team members to find their way in your code more easily. In general, a source file should be readable from top to bottom, as if you are reading a book. This prevents readers from having to browse up and down through the code file.</p>
@@ -1525,7 +1523,7 @@ countries.Add(<span class="pl-s1"><span class="pl-pds">"</span>United States<spa
 </ol>
 
 <h2>
-<a id="be-reluctant-with-regions-" class="anchor" href="#be-reluctant-with-regions-" aria-hidden="true"><span class="octicon octicon-link"></span></a>Be reluctant with <code>#region</code>s <img src="imgs/must.png" alt="">
+<a id="be-reluctant-with-regions-" class="anchor" href="#be-reluctant-with-regions-" aria-hidden="true"><span class="octicon octicon-link"></span></a>Be reluctant with <code>#region</code>s <img src="images/must.png" alt="">
 </h2>
 
 <p>Regions can be helpful, but can also hide the main purpose of a class. Therefore, use #regions only for:</p>
